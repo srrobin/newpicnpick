@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+body{
+    font-family: "Lato", sans-serif;
+    line-height: 1.4;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+a, a:active, a:focus, a:hover, button, button:active, button:focus, button:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+a, button {
+  color: inherit;
+  display: inline-block;
+  transition: all .1s ease-in-out;
+}
+
+i, li, span {
+  display: inline-block;
+}
+.flex {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.container__fluid {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1470px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+.gap-20{
+  margin: 20px 0;
+}
+.containers {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1140px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+.mtb-5 {
+  margin-bottom: 5px!important;
+  margin-top: 5px!important;
+}
+.block {
+  display: block;
+}
+button, h1, h2, h3, h4, h5, h6, input, li, p, span, ul {
+  box-sizing: border-box;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+  white-space: inherit;
+}
+span{
+  display: inline-block;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+
+.mb-5 {
+  margin-bottom: 5px!important;
+}
+.pos-rel {
+  position: relative;
+}
+.start {
+  justify-content: flex-start;
+}
+.strike-through {
+  color: #666;
+  font-size: .9em;
+  line-height: 0;
+  margin-right: 5px;
+  padding: 0 2px;
+  position: relative;
+}
+
+.f-12 {
+  font-size: 1.2em!important;
+}
+.discount {
+  background: #e5e4e2;
+  border-radius: 4px;
+  color: #ec2028;
+  color: var(--primary-color);
+  font-size: .75em;
+  font-weight: 600;
+  padding: 1px 4px;
+}
+.ml-10 {
+  margin-left: 10px!important;
+}
+.border {
+  border-radius: 10px;
+  box-shadow: 0 0 1px 2px var(--primary-color);
+  display: block;
+}
