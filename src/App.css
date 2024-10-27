@@ -553,6 +553,7 @@ a.card__link {
   position: absolute;
   right: 0;
   top: 0;
+  width: 100%;
 }
 
 
@@ -563,8 +564,6 @@ a.card__link {
 .flow-hidden {
   overflow: hidden;
 }
-
-
 
 .mb-0 {
   margin-bottom: 0!important;
