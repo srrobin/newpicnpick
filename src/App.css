@@ -211,9 +211,10 @@ header .bottom-area>div a span {
 }
 
 /* hero section css */
-.main{
+.main {
   padding-top: 111px;
-  background: #e5e4e2;
+  /* background: #e5e4e2; */
+  min-height: 600px;
 }
 /* .main__slide{
   height: 450px;
@@ -574,5 +575,23 @@ a.card__link {
 .section {
   padding: 60px 0 0px;
 }
+/* brand css */
+.category-tile-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+.category-tile-wrapper .category-tile {
+  margin-bottom: 20px;
+  padding: 0 10px;
+  text-align: center;
+  width: 14.28%;
+}
 
-
+.img-wrapper {
+  padding-bottom: 100%;
+  position: relative;
+}
+.category-tile-wrapper .category-tile .img-wrapper img {
+  padding: 15px;
+}

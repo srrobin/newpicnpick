@@ -1,6 +1,7 @@
 import React from 'react';
 import { BsCart3 } from "react-icons/bs";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import { NavLink } from 'react-router-dom';
 const Menubar = () => {
     return (
         <header className="no-banner">
@@ -35,9 +36,10 @@ const Menubar = () => {
               My Account <MdKeyboardArrowDown />
             </button>
             <ul className="dropdown-menu">
-              <li><a className="dropdown-item" href="/">Action</a></li>
-              <li><a className="dropdown-item" href="/">Another action</a></li>
-              <li><a className="dropdown-item" href="/">Something else here</a></li>
+              <li><a className="dropdown-item" href="/">Orders</a></li>
+              <li><a className="dropdown-item" href="/">Wish List</a></li>
+              <li><a className="dropdown-item" href="/">Compared List</a></li>
+              <li><a className="dropdown-item" href="/">Vouchers </a></li>
             </ul>
           </div>
                 <a href="/cart" className="cart-btn flex pos-rel h-40x gap-2">
@@ -52,16 +54,16 @@ const Menubar = () => {
             <div className="container__fluid">
                 <div className="flex sided">
                 <div>
-                    <a href="/" aria-current="page" className="nuxt-link-exact-active nuxt-link-active">
+                    <NavLink to="/" aria-current="page">
                     <span>Home</span>
-                    </a>
-                    <a href="/products/discover"><span>Products</span></a>
-                    <a href="/categories"><span>Categories</span></a>
-                    <a href="/brands"><span>Brands</span></a>
-                    <a href="/flash-sale"><span>Hot Deals</span></a>
+                    </NavLink>
+                    <NavLink to="/products"><span>Products</span></NavLink>
+                    <NavLink to="/categories"><span>Categories</span></NavLink>
+                    <NavLink to="/brands"><span>Brands</span></NavLink>
+                    <NavLink to="/flash-sale"><span>Hot Deals</span></NavLink>
                 </div>
                 <div>
-                    <a href="/track-order"><span>Track Order</span></a>
+                    <NavLink to="/"><span>Track Order</span></NavLink>
                 </div>
                 </div>
             </div>
