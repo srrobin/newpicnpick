@@ -5,6 +5,11 @@ import Menubar from './containers/Menubar';
 import ImportBsJS from './utils/importBsJS';
 import Footer from './containers/Footer';
 import HomePage from './containers/HomePage';
+import { Route, Routes } from 'react-router-dom';
+import Products from './containers/Products';
+import Categories from './containers/Categories';
+import Brands from './containers/Brands';
+import HotDeals from './containers/HotDeals';
 
 function App() {
   return (
@@ -12,7 +17,14 @@ function App() {
       <ImportBsJS/>
       <Menubar/>
       <div className='main'>
-        <HomePage/>
+      <Routes>
+         <Route path="/" element={ <HomePage/>} />
+         <Route path="/products" element={ <Products/>} />
+         <Route path="/categories" element={ <Categories/>} />
+         <Route path="/brands" element={ <Brands/>} />
+         <Route path="/hotdeals" element={ <HotDeals/>} />
+      </Routes>
+       
       </div>
       <Footer/>
     </>
