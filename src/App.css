@@ -512,7 +512,7 @@ a.card__link {
   padding-right: 7.5px;
 }
 .single__features {
-  width: 130px;
+  width:calc(33.33% - 11px);
   text-align: center;
   background: #e5e4e2;
   display: flex;
@@ -522,13 +522,13 @@ a.card__link {
   border-radius: 10px;
 }
 .brandName {
-  margin-top: 30px;
+  margin-top: 20px;
   font-size: 17px;
   font-weight: 400;
 }
-.feature__body{
+/* .feature__body{
   padding: 15px 15px 0 !important;
-}
+} */
 
 .brands-wrapper .brand-banner {
   display: flex;

@@ -11,8 +11,8 @@ const FeatureBrands = () => {
                 </div>
             </div>
             <div className="card-body feature__body">
-                <div className="all__features d-flex align-items-center justify-content-between  flex-wrap " >
-                    <a href='/' className="single__features text-center " style={{marginBottom:"15px"}} >
+                <div className="all__features d-flex align-items-center gap-3  flex-wrap " >
+                    <a href='/' className="single__features text-center "  >
                         <img 
                             src={b1} 
                             alt="Addidus brand logo" 
@@ -23,7 +23,7 @@ const FeatureBrands = () => {
                         />
                         <div className="brandName">Addidus</div>
                     </a>
-                    <a href='/' className="single__features text-center " style={{marginBottom:"15px"}} >
+                    <a href='/' className="single__features text-center " >
                         <img 
                             src={b1} 
                             alt="Addidus brand logo" 
@@ -34,7 +34,7 @@ const FeatureBrands = () => {
                         />
                         <div className="brandName">Addidus</div>
                     </a>
-                    <a href='/' className="single__features text-center " style={{marginBottom:"15px"}} >
+                    <a href='/' className="single__features text-center "  >
                         <img 
                             src={b1} 
                             alt="Addidus brand logo" 
@@ -46,7 +46,7 @@ const FeatureBrands = () => {
                         <div className="brandName">Addidus</div>
                     </a>
 
-                    <a href='/' className="single__features text-center " style={{marginBottom:"15px"}} >
+                    <a href='/' className="single__features text-center "  >
                         <img 
                             src={b1} 
                             alt="Addidus brand logo" 
@@ -57,7 +57,7 @@ const FeatureBrands = () => {
                         />
                         <div className="brandName">Addidus</div>
                     </a>
-                    <a href='/' className="single__features text-center " style={{marginBottom:"15px"}} >
+                    <a href='/' className="single__features text-center "  >
                         <img 
                             src={b1} 
                             alt="Addidus brand logo" 
@@ -68,7 +68,7 @@ const FeatureBrands = () => {
                         />
                         <div className="brandName">Addidus</div>
                     </a>
-                    <a href='/' className="single__features text-center " style={{marginBottom:"15px"}} >
+                    <a href='/' className="single__features text-center "  >
                         <img 
                             src={b1} 
                             alt="Addidus brand logo" 
