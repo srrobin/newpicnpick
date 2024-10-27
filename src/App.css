@@ -179,7 +179,7 @@ header .bottom-area>div a span {
  }
  .payment__method{
   margin: 10px auto;
-  padding: 10px 10px 10px;
+  /* padding: 10px 10px 10px; */
  }
 
 .footer__title{
@@ -213,7 +213,7 @@ header .bottom-area>div a span {
 /* hero section css */
 .main{
   padding-top: 111px;
-  /* background: #E5E4E2; */
+  background: #e5e4e2;
 }
 /* .main__slide{
   height: 450px;
@@ -268,7 +268,8 @@ a.card__link {
 
 /* product card css */
 .productcard__area{
-  width: 207.167px;
+  width: calc(16.66% - 14px);
+  /* width: 207.167px; */
 }
 .p-tile {
   border: 1px solid transparent;
@@ -571,34 +572,8 @@ a.card__link {
 .br-primary {
   border-radius: 10px;
 }
-
-
-
-/* .brands-wrapper .featured-brands.area {
-  margin: 0;
-}
-.area {
-  background: #fff;
-  border-radius: 10px;
-}
-.brands-wrapper .featured-brands.area .title {
-  border-bottom: 0;
-  padding-bottom: 15px;
-  padding-top: 15px;
+.section {
+  padding: 60px 0 0px;
 }
 
-.area .title {
-  border-bottom: 1px solid #eee;
-  font-weight: 600;
-  padding: 10px 15px;
-}
 
-.sided {
-  justify-content: space-between;
-}
-.link {
-  height: auto;
-  line-height: 1.6;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-} */

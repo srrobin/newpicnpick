@@ -13,7 +13,7 @@ const ProductBanner = ({ imageLink, alttext }) => {
                     alt={alttext} 
                     width="100%" 
                     height="auto" 
-                    style={{ minWidth: '500px', borderRadius: '8px' }} 
+                    style={{ display:"block", minWidth: '500px', borderRadius: '8px', marginBottom:"20px" }} 
                 />
             </a>
         </div>

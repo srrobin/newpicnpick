@@ -7,7 +7,10 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import bgImage from "../assets/footer.svg";
-
+import { MdOutlineSmartToy } from "react-icons/md";
+import { GiSonicShoes } from "react-icons/gi";
+import { GiHandBag } from "react-icons/gi";
+import { FaTools } from "react-icons/fa";
 const bgStyle = {
   backgroundColor: "#000",
   backgroundImage: `url(${bgImage})`,  
@@ -21,27 +24,29 @@ const bgStyle = {
 const Footer = () => {
     return (
         <div className='footer__wrapper'>
-            <div className='containers'>
-                <div className='footer__top_area'>
-                    <div className='footer__logo text-center'>
-                        <a href='/' className="logo">
+            <div className='section'>
+                <div className='containers'>
+                    <div className='footer__top_area'>
+                        <div className='footer__logo text-center'>
+                            <a href='/' className="logo">
+                                <img
+                                    src={footerLogo}
+                                    alt='footer logo'
+                                    width="200"
+                                    height="50"
+                                    className=''
+                                />
+                            </a>
+                        </div>
+                        <div className='payment__method'>
                             <img
-                                src={footerLogo}
-                                alt='footer logo'
-                                width="200"
-                                height="50"
+                                src={paymentMethod}
+                                alt='payment methods'
+                                width="330"
+                                height="15"
                                 className=''
                             />
-                        </a>
-                    </div>
-                    <div className='payment__method'>
-                        <img
-                            src={paymentMethod}
-                            alt='payment methods'
-                            width="330"
-                            height="15"
-                            className=''
-                        />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -68,11 +73,11 @@ const Footer = () => {
                         </div>
                         <div className='col-md-3'>
                             <div className='footer__block'>
-                                <div className='footer__title'>Category</div>
-                                <div className='footer__link'>Kids & Toys</div>
-                                <div className='footer__link'> Formal Shoes</div>
-                                <div className='footer__link'>Travel Bags & Backpacks </div>
-                                <div className='footer__link'>Tools, DIY & Outdoors  </div>
+                                <div className='footer__title'> Category</div>
+                                <div className='footer__link'><MdOutlineSmartToy size={16} style={{ fill: '#ddd',marginRight:"8px" }}/> Kids & Toys</div>
+                                <div className='footer__link'> <GiSonicShoes size={16} style={{ fill: '#ddd',marginRight:"8px" }}/> Formal Shoes</div>
+                                <div className='footer__link'><GiHandBag size={16} style={{ fill: '#ddd',marginRight:"8px" }}/>Travel Bags & Backpacks </div>
+                                <div className='footer__link'><FaTools size={16} style={{ fill: '#ddd',marginRight:"8px" }}/>Tools, DIY & Outdoors  </div>
                             </div>
                         </div>
                         <div className='col-md-3'>
