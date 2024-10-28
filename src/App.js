@@ -12,6 +12,14 @@ import Brands from './containers/Brands';
 import HotDeals from './containers/HotDeals';
 import LoginPage from './components/LoginPage';
 import UserOrder from './containers/UserOrder';
+import About from './containers/FooterLink/About';
+import Faq from './containers/FooterLink/Faq';
+import Contact from './containers/FooterLink/Contact';
+import Help from './containers/FooterLink/Help';
+import RefundPolicy from './containers/FooterLink/RefundPolicy';
+import PrivacyPolicy from './containers/FooterLink/PrivacyPolicy';
+import Sitemap from './containers/FooterLink/Sitemap';
+import TrackOrder from './containers/TrackOrder';
 
 function App() {
   const location = useLocation();
@@ -29,6 +37,22 @@ function App() {
         return '#ffffff'; 
       case '/flash-sale':
         return '#e5e4e2'; 
+      case '/page/about':
+        return '#ffffff';
+      case '/page/faq':
+        return '#ffffff'; 
+      case '/page/help':
+        return '#ffffff';
+      case '/page/refund-policy':
+        return '#ffffff'; 
+      case '/page/privacy-policy':
+        return '#ffffff'; 
+      case '/page/sitemap':
+        return '#ffffff';
+      case '/track-order':
+        return '#ffffff'; 
+      case '/page/contact':
+        return '#ffffff'; 
       default:
         return '#e5e4e2'; 
     }
@@ -55,6 +79,19 @@ function App() {
           <Route path="/brands" element={<Brands />} />
           <Route path="/flash-sale" element={<HotDeals />} />
           <Route path="/user/order" element={<UserOrder />} />
+          <Route path="/track-order" element={<TrackOrder />} />
+
+          <Route path="/page/about" element={<About />} />
+          <Route path="/page/faq" element={<Faq />} />
+          <Route path="/page/contact" element={<Contact />} />
+          <Route path="/page/help" element={<Help />} />
+          <Route path="/page/refund-policy" element={<RefundPolicy />} />
+          <Route path="/page/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/page/sitemap" element={<Sitemap />} />
+
+
+
+
           <Route path="/login" element={<LoginPage />} />
         </Routes>
       </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { BsCart3 } from "react-icons/bs";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 const Menubar = () => {
     return (
         <header className="no-banner">
@@ -36,10 +36,10 @@ const Menubar = () => {
               My Account <MdKeyboardArrowDown />
             </button>
             <ul className="dropdown-menu">
-              <li><a className="dropdown-item" href="/user/order">Orders</a></li>
-              <li><a className="dropdown-item" href="/login">Wish List</a></li>
-              <li><a className="dropdown-item" href="/login">Compared List</a></li>
-              <li><a className="dropdown-item" href="/login">Vouchers </a></li>
+              <li><Link className="dropdown-item" to="/user/order">Orders</Link></li>
+              <li><Link className="dropdown-item" to="/login">Wish List</Link></li>
+              <li><Link className="dropdown-item" to="/login">Compared List</Link></li>
+              <li><Link className="dropdown-item" to="/login">Vouchers </Link></li>
             </ul>
           </div>
                 <a href="/cart" className="cart-btn flex pos-rel h-40x gap-2">
@@ -63,7 +63,7 @@ const Menubar = () => {
                     <NavLink to="/flash-sale"><span>Hot Deals</span></NavLink>
                 </div>
                 <div>
-                    <NavLink to="/"><span>Track Order</span></NavLink>
+                    <NavLink to="/track-order"><span>Track Order</span></NavLink>
                 </div>
                 </div>
             </div>

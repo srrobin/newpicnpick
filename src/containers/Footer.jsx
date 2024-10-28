@@ -11,6 +11,7 @@ import { MdOutlineSmartToy } from "react-icons/md";
 import { GiSonicShoes } from "react-icons/gi";
 import { GiHandBag } from "react-icons/gi";
 import { FaTools } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 const bgStyle = {
   backgroundColor: "#000",
   backgroundImage: `url(${bgImage})`,  
@@ -55,20 +56,36 @@ const Footer = () => {
                     <div className='row'>
                         <div className='col-md-3'>
                             <div className='footer__block'>
-                                <div className='footer__title'>Important Links</div>
-                                <div className='footer__link'>About</div>
-                                <div className='footer__link'>Faq</div>
-                                <div className='footer__link'>Contact</div>
-                                <div className='footer__link'>Help  </div>
+                                <div className='footer__title'> 
+                                    Important Links
+                                </div>
+                                <div className='footer__link'>
+                                    <Link to="/page/about">
+                                    About                            
+                                    </Link>
+                                </div>
+                                <div className='footer__link'>
+                                <Link to="/page/faq">
+                                Faq                            
+                                </Link>   
+                               </div>
+                                <div className='footer__link'>
+                                    <Link to="/page/contact">Contact</Link>
+                                    
+                                </div>
+                                <div className='footer__link'>
+                                <Link to="/page/help">Help</Link>
+                                      
+                                    </div>
                             </div>
                         </div>
                         <div className='col-md-3'>
                             <div className='footer__block'>
-                                <div className='footer__title'>About</div>
-                                <div className='footer__link'>Refund Policy</div>
-                                <div className='footer__link'>Privacy Policy</div>
-                                <div className='footer__link'>Help</div>
-                                <div className='footer__link'>Sitemap</div>
+                                <div className='footer__title'> About</div>
+                                <div className='footer__link'> <Link to="/page/refund-policy">Refund Policy</Link></div>
+                                <div className='footer__link'> <Link to="/page/privacy-policy">Privacy Policy</Link></div>
+                                <div className='footer__link'> <Link to="/page/help">Help</Link></div>
+                                <div className='footer__link'> <Link to="/page/sitemap">Sitemap</Link></div>
                             </div>
                         </div>
                         <div className='col-md-3'>
