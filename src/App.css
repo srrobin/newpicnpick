@@ -595,3 +595,211 @@ a.card__link {
 .category-tile-wrapper .category-tile .img-wrapper img {
   padding: 15px;
 }
+
+/* login page css */
+.login__area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.brand__logo{
+
+}
+
+
+.user__form {
+  background: #fff!important;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 1px 2px 2px 0 rgba(0,0,0,.16);
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 40px;
+  text-align: center;
+  width: 460px;
+}
+.brand__logo {
+  margin: 0 0 30px;
+}
+.userform__title {
+  font-size: 19px;
+  font-weight: 600;
+  /* color: dimgrey; */
+  margin: 0 0 15px;
+}
+
+
+.user__form .input-wrap {
+  text-align: left;
+}
+.input-wrap {
+  margin-bottom: 20px;
+}
+label {
+  display: inline-block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.input-wrap label {
+  display: block;
+  font-size: .75em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.icon-input {
+  position: relative;
+}
+.icon-input .icon {
+  left: 10px;
+  opacity: .7;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.email-icon {
+  background-position: 44.5% 44.5%;
+}
+.icon {
+  height: 16px;
+  min-width: 16px;
+  width: 16px;
+}
+.icon-input input {
+  padding-left: 40px!important;
+}
+.input-wrap input, .input-wrap textarea {
+  border: 1px solid #ddd !important;
+  display: block;
+  padding: 0 15px;
+  width: 100%;
+}
+input:not([type=checkbox]), textarea {
+  border: 1px solid #ddd;
+}
+button, input:not([type=checkbox]), textarea {
+  border: none;
+  border-radius: 10px;
+  height: 39px;
+  line-height: 39px;
+  outline: 0;
+}
+input {
+  transition: all .15s;
+  font-size: 14px !important;
+  font-weight: 300;
+}
+
+.ajax-btn:active, button:active, input:active, input:focus, textarea:active, textarea:focus {
+  background: rgba(0,0,0,.02);
+  box-shadow: 0 0 3px 2px #ec2028;
+  box-shadow: 0 0 3px 2px var(--primary-color);
+}
+
+.icon-input.right-icon .icon:last-child {
+  cursor: pointer;
+  left: auto;
+  right: 10px;
+}
+.ajax-btn {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.plr-30 {
+  padding-left: 25px!important;
+  padding-right: 25px!important;
+}
+
+.primary-btn {
+  background: #ec2028;
+  background: var(--primary-color);
+  border-radius: 10px;
+  box-shadow: inset 0 1px 0 hsla(0,0%,100%,.3);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  transition: all .2s;
+}
+.primary-btn:hover {
+  background: #2c2c2c
+}
+
+.link {
+  font-weight: 300;
+  font-size: 15px;
+  color: #555;
+  transition: all .50s ease;
+}
+.link:hover {
+ text-decoration: underline;
+}
+.create__account {
+  font-size: 15px;
+  font-weight: 300;
+  color: #000;
+}
+.create__account > a {
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+  margin: 0 10px;
+  transition: all .50s ease;
+}
+.create__account > a:hover {
+  text-decoration: underline;
+}
+.or__text {
+  text-align: center;
+  margin: 15px 0;
+  font-weight: 800;
+}
+.google-btn {
+  background: none;
+  background: #e8f0fe;
+  border-color: #ccc;
+  color: #111;
+  text-align: center;
+  transition: all .1s;
+}
+.flex-1 {
+  flex: 1;
+}
+.gap-5 {
+  gap: 5px;
+}
+button>.icon, span>.icon {
+  height: 20px;
+  margin: 2px 5px;
+  min-width: 20px;
+  opacity: .6;
+  width: 20px;
+}
+.google-icon {
+  background-position: 23.5% 12%;
+}
+.google-btn:hover {
+  background: #e8f0fe!important;
+  box-shadow: 1px 1px 3px rgba(0,0,0,.3);
+  opacity: .9;
+}
+.mt-30 {
+  margin-top: 30px!important;
+}
+
+.ptb-15 {
+  padding-bottom: 15px!important;
+  padding-top: 15px!important;
+}
+
+.b-t {
+  border-top: 1px solid #ddd;
+}

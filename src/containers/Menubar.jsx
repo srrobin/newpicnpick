@@ -36,10 +36,10 @@ const Menubar = () => {
               My Account <MdKeyboardArrowDown />
             </button>
             <ul className="dropdown-menu">
-              <li><a className="dropdown-item" href="/">Orders</a></li>
-              <li><a className="dropdown-item" href="/">Wish List</a></li>
-              <li><a className="dropdown-item" href="/">Compared List</a></li>
-              <li><a className="dropdown-item" href="/">Vouchers </a></li>
+              <li><a className="dropdown-item" href="/user/order">Orders</a></li>
+              <li><a className="dropdown-item" href="/login">Wish List</a></li>
+              <li><a className="dropdown-item" href="/login">Compared List</a></li>
+              <li><a className="dropdown-item" href="/login">Vouchers </a></li>
             </ul>
           </div>
                 <a href="/cart" className="cart-btn flex pos-rel h-40x gap-2">

@@ -144,3 +144,9 @@ span{
 .mainBg_gray{
   background: #e5e4e2;
 }
+.mb-10 {
+  margin-bottom: 10px!important;
+}
+.mt-20 {
+  margin-top: 20px!important;
+}
