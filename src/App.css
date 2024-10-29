@@ -1151,3 +1151,138 @@ button>.icon, span>.icon {
 .track-container .img-wrap {
   max-width: 400px;
 }
+
+
+/* order css */
+
+.order-wrapper {
+  display: flex;
+}
+.order-wrapper .left-sidebar {
+  font-size: 1.1em;
+  min-width: 250px;
+}
+.order-wrapper .right-area {
+  width: calc(100% - 250px);
+}
+li {
+  font-size: 1em;
+  line-height: 1.8;
+  list-style: none;
+}
+
+.order-wrapper .left-sidebar li {
+  display: block;
+}
+.order-wrapper .left-sidebar li a {
+  padding: 5px 0;
+}
+.order-wrapper .left-sidebar .active {
+  color: #ec2028;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+.start {
+  justify-content: flex-start;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.flex {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.ck-button {
+  margin: 0 10px 10px 0;
+}
+
+label {
+  display: inline-block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.ck-button label input {
+  position: absolute;
+  top: -20px;
+}
+.ck-button label span {
+  background: #fff;
+  border: 1px solid #d0d0d0;
+  border-radius: 100px;
+  cursor: pointer;
+  display: block;
+  padding: 7.5px 20px;
+}
+.ck-button label span:hover {
+  background: #ddd;
+}
+.ck-button input:checked+span {
+  background-color: #eefaf4;
+  color: #356842;
+}
+.mb-15 {
+  margin-bottom: 15px!important;
+}
+.order__card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+}
+.b-b {
+  border-bottom: 1px solid #ddd;
+}
+.link-color {
+  color: #17a2b8;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.color-lite {
+  color: #555;
+}
+
+.f-9 {
+  font-size: .9em;
+}
+
+.w-80x {
+  width: 80px;
+}
+.img-wrapper {
+  padding-bottom: 100%;
+  position: relative;
+}
+
+.w-100 {
+  width: 100%;
+}
+.img-wrapper .shimmer, .img-wrapper img {
+  height: auto;
+  left: 50%;
+  max-height: 90%;
+  max-width: 90%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: auto;
+}
+.plr-20 {
+  padding-left: 20px!important;
+  padding-right: 20px!important;
+}
+.ptb-10 {
+  padding-bottom: 10px!important;
+  padding-top: 10px!important;
+}
+.mr-15 {
+  margin-right: 15px!important;
+}
+
+.mr-5 {
+  margin-right: 5px!important;
+}
