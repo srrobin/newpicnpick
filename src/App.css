@@ -269,7 +269,8 @@ a.card__link {
 
 /* product card css */
 .productcard__area{
-  width: calc(16.66% - 14px);
+  /* width: calc(16.66% - 14px); */
+  width: 184px;
   /* width: 207.167px; */
 }
 .p-tile {
@@ -842,3 +843,68 @@ button>.icon, span>.icon {
 .sitemap {
   margin-bottom: 20px;
 }
+
+/* hero carocel css */
+.carousel-indicators [data-bs-target] {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50%;
+  
+}
+.carousel-indicators {
+ background: rgba(0,0,0,.4) !important;
+ padding: 3px !important;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-image:none !important;
+  color: #fff;
+  background-color: rgba(0,0,0,.4);
+  font-size: 20px;
+
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  /* line-height: 1.1; */
+}
+.carousel-indicators {
+  margin-right: 30% !important;
+  margin-left: 30% !important;
+  border-radius: 16px !important;
+}
+.carousel-control-next, .carousel-control-prev {
+  width: 5% !important;
+  height: 100%;
+}
+
+/* carosel css */
+.slick-prev, .slick-next {
+  width: 35px !important;
+  height: 35px !important;
+  padding: 7px !important;
+  transition: all .50s ease;
+}
+.slick-next {
+  right: 13px !important;
+  color: #f2ebeb !important;
+  background:  rgba(0,0,0,.3)!important;
+  border-radius: 50%;
+}
+.slick-prev {
+  left: 0px !important;
+  z-index: 9;
+  color: #f2ebeb !important;
+  background:  rgba(0,0,0,.3)!important;
+  border-radius: 50%;
+}
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+  background: rgba(0,0,0,.6)!important;
+}
+/* .slick-prev:before, .slick-next:before {
+  color: red !important; 
+  color: rgba(0,0,0,.2)!important;
+} */

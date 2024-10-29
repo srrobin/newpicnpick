@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { Route, Routes, useLocation } from 'react-router-dom';
 import Menubar from './containers/Menubar';
 import ImportBsJS from './utils/importBsJS';
