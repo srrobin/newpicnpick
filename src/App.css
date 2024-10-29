@@ -515,7 +515,8 @@ a.card__link {
   padding-right: 7.5px;
 }
 .single__features {
-  width:calc(33.33% - 11px);
+  width: 115px !important;
+  /* width:calc(33.33% - 11px); */
   text-align: center;
   background: #e5e4e2;
   display: flex;
@@ -523,6 +524,7 @@ a.card__link {
   align-items: center;
   padding: 10px;
   border-radius: 10px;
+  margin: 8px 5px 0px 0px;
 }
 .brandName {
   margin-top: 20px;
@@ -903,8 +905,31 @@ button>.icon, span>.icon {
 }
 .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
   background: rgba(0,0,0,.6)!important;
+
+/* double line css */
+
+.double_line .slick-prev, .double_line .slick-next {
+  top: -9% !important;
 }
-/* .slick-prev:before, .slick-next:before {
-  color: red !important; 
-  color: rgba(0,0,0,.2)!important;
-} */
+.double_line .slick-prev {
+  left: 188px !important;
+  z-index: 9;
+  color: #f2ebeb !important;
+  background: rgba(0,0,0,.3)!important;
+  border-radius: 50%;
+}
+.double_line .slick-next {
+  right: 105px !important;
+  color: #f2ebeb !important;
+  background: rgba(0,0,0,.3)!important;
+  border-radius: 50%;
+}
+.double_line .slick-prev, .double_line .slick-next {
+  width: 35px !important;
+  height: 35px !important;
+  padding: 7px !important;
+  transition: all .50s ease;
+}
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+  background: rgba(0,0,0,.6)!important;
+}
