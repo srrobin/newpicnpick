@@ -9,7 +9,7 @@ import { GrFormPrevious } from "react-icons/gr";
 
 const TrendingProducts = () => {
   var settings = {
-    dots: true,
+    dots: false,
     infinite: false,
     speed: 500,
     slidesToShow: 6,
