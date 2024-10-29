@@ -305,7 +305,43 @@ a.card__link {
   transition: all .1s;
   z-index: 0;
 }
+.p-tile .img-wrapper>.compare-btn {
+  opacity: 0;
+  right: -6px;
+  transform: translateX(20px);
+  transition: all .2s ease;
+}
+.p-tile .img-wrapper:hover .compare-btn {
+  opacity: 1;
+  right: 29px;
 
+}
+.p-tile .img-wrapper .badge, .p-tile .img-wrapper>.compare-btn {
+  position: absolute;
+  top: 7px;
+  z-index: 1;
+}
+.compare-btn {
+  align-items: center;
+  background: #eee;
+  border-radius: 7px;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  width: 30px;
+  color: #4d4c4c;
+}
+
+svg.icon.reload-icon {
+  height: 15px;
+  margin: 2px 5px;
+  min-width: 15px;
+  opacity: .6;
+  width: 15px;
+}
+.reload-icon {
+  background-position: 66% 12.5%;
+}
 .p-tile>.page-link {
   display: block;
 }
