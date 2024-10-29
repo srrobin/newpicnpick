@@ -905,7 +905,7 @@ button>.icon, span>.icon {
 }
 .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
   background: rgba(0,0,0,.6)!important;
-
+}
 /* double line css */
 
 .double_line .slick-prev, .double_line .slick-next {
@@ -930,6 +930,7 @@ button>.icon, span>.icon {
   padding: 7px !important;
   transition: all .50s ease;
 }
-.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+.double_line .slick-prev:hover, .double_line .slick-prev:focus, .double_line .slick-next:hover, 
+.double_line .slick-next:focus {
   background: rgba(0,0,0,.6)!important;
 }
