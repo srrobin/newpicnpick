@@ -9,7 +9,7 @@ const FeatureBrands = () => {
         // className: "center",
         centerMode: false,
         infinite: false,
-        centerPadding: "60px",
+        // centerPadding: "60px",
         slidesToShow: 3,
         speed: 500,
         rows: 2,
