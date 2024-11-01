@@ -32,7 +32,7 @@ function App() {
       case '/':
         return '#e5e4e2'; 
       case '/products':
-        return '#ffe4e1'; 
+        return '#fff'; 
       case '/categories':
         return '#ffffff'; 
       case '/brands':
