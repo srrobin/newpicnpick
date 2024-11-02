@@ -98,18 +98,22 @@ span{
   justify-content: flex-start;
 }
 .strike-through {
-  color: #666;
-  font-size: .9em;
+  color: #aca3a3;
+  font-size: 14px;
   line-height: 0;
   margin-right: 5px;
   padding: 0 2px;
   position: relative;
 }
-
+/* .priv__price {
+  text-decoration: line-through;
+  color: #aca3a3;
+  font-size: 14px;
+} */
 .f-12 {
   font-size: 1.2em!important;
 }
-.discount {
+/* .discount {
   background: #e5e4e2;
   border-radius: 4px;
   color: #ec2028;
@@ -117,7 +121,7 @@ span{
   font-size: .75em;
   font-weight: 600;
   padding: 1px 4px;
-}
+} */
 .ml-10 {
   margin-left: 10px!important;
 }

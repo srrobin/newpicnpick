@@ -1,5 +1,6 @@
 import React from 'react';
 import sellImg from "../assets/p1.jpg"
+import { TfiReload } from "react-icons/tfi";
 const TopSellingCard = () => {
     return (
         <a href="/" className="topselling__card item text-center page-link">
@@ -28,17 +29,17 @@ const TopSellingCard = () => {
                             <span className="strike-through">
                                 <span>৳1,600</span>
                             </span>
-                            <span className="f-12 ml-2">
+                            <span className=" ml-2 topsalling__price">
                                 <span>৳1,100</span>
                             </span>
                         </h5>
-                        <span className="discount ml-10">-32%</span>
+                        <span className="discount discount__rate  ml-10">-32%</span>
                         <button 
                             aria-label="Compare" 
                             title="Compare" 
                             className="compare-btn ml-10"
                         >
-                            <i className="icon reload-icon"></i>
+                            <TfiReload className='icon reload-icon'/>
                         </button>
                     </div>
                 </div>
