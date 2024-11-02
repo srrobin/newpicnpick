@@ -126,7 +126,7 @@ const Products = () => {
                                 { id: "brand-9442213", label: "Chinese" }
                             ].map((brand, index) => (
                                 <label key={index} htmlFor={brand.id} className="block mtb-10">
-                                <input type="checkbox" id={brand.id} name="brand" value={brand.id} />
+                                <input type="checkbox" id={brand.id} name="brand" value={brand.id} style={{marginRight:"5px"}} />
                                 {brand.label}
                                 </label>
                             ))}
@@ -143,7 +143,7 @@ const Products = () => {
                                 { id: "collection-3", label: "Top selling products" }
                             ].map((collection, index) => (
                                 <label key={index} htmlFor={collection.id} className="block mtb-10">
-                                <input type="checkbox" id={collection.id} value={collection.id} />
+                                <input type="checkbox" id={collection.id} value={collection.id} style={{marginRight:"5px"}} />
                                 {collection.label}
                                 </label>
                             ))}
@@ -153,7 +153,7 @@ const Products = () => {
                         <div className="sidebar-section">
                             <h4 className="title">Shipping Options</h4>
                             <label htmlFor="cb-1" className="block mtb-10">
-                            <input type="checkbox" id="cb-1" name="shipping" value="1" />
+                            <input type="checkbox" id="cb-1" name="shipping" value="1" style={{marginRight:"5px"}} />
                             Bangladesh
                             </label>
                         </div>

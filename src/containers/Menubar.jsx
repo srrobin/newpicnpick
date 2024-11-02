@@ -42,10 +42,10 @@ const Menubar = () => {
               <li><Link className="dropdown-item" to="/login">Vouchers </Link></li>
             </ul>
           </div>
-                <a href="/cart" className="cart-btn flex pos-rel h-40x gap-2">
+                <Link to="/cart" className="cart-btn flex pos-rel h-40x gap-2">
                 <BsCart3 />
                 <span className="title">Cart</span>
-                </a>
+                </Link>
             </div>
             </div>
 
