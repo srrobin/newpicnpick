@@ -23,6 +23,8 @@ import PrivacyPolicy from './containers/FooterLink/PrivacyPolicy';
 import Sitemap from './containers/FooterLink/Sitemap';
 import TrackOrder from './containers/TrackOrder';
 import Cart from './containers/Cart';
+import Shipping from './containers/Shipping';
+import Checkout from './containers/Checkout';
 
 function App() {
   const location = useLocation();
@@ -84,6 +86,8 @@ function App() {
           <Route path="/user/order" element={<UserOrder />} />
           <Route path="/track-order" element={<TrackOrder />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/shipping" element={<Shipping />} />
+          <Route path="/checkout" element={<Checkout />} />
 
           <Route path="/page/about" element={<About />} />
           <Route path="/page/faq" element={<Faq />} />

@@ -1780,3 +1780,266 @@ input[type=checkbox], input[type=radio] {
   text-align: center;
   z-index: 1;
 }
+.product-detail .detail-right {
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 280px;
+}
+.checkout-detail.product-detail .detail-right {
+  width: 350px;
+}
+.area {
+  background: #fff;
+  border-radius: 10px;
+}
+.plr-20 {
+  padding-left: 20px!important;
+  padding-right: 20px!important;
+}
+
+.pb-20 {
+  padding-bottom: 20px!important;
+}
+
+.pt-10 {
+  padding-top: 10px!important;
+}
+.mb-15 {
+  margin-bottom: 15px!important;
+}
+.pb-10 {
+  padding-bottom: 10px!important;
+}
+.fw-400 {
+  font-weight: 400;
+}
+
+.price {
+  font-weight: 600;
+}
+.mb-20 {
+  margin-bottom: 20px!important;
+}
+.pt-10 {
+  padding-top: 10px!important;
+}
+.b-t {
+  border-top: 1px solid #ddd;
+}
+.discounted-price {
+  background: #eefaf4;
+  color: #2dbf74;
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.mt-20 {
+  margin-top: 20px!important;
+}
+
+.danger-msg, .success-msg {
+  border-radius: 10px;
+  padding: 12.5px 15px;
+}
+.discounted-price .price {
+  color: inherit;
+  min-width: 100px;
+  text-align: right;
+}
+.price {
+  font-weight: 600;
+}
+
+/* shipping css */
+/* shipping css */
+/* shipping css */
+/* shipping css */
+/* shipping css */
+
+
+.mr-20 {
+  margin-right: 20px!important;
+}
+.pb-10 {
+  padding-bottom: 10px!important;
+}
+
+.p-20 {
+  padding: 20px!important;
+}
+
+.address-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+}
+.p-15 {
+  padding: 15px!important;
+}
+label.card {
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  transition: all .1s;
+}
+
+label.card:before {
+  border: 4px solid #aaa;
+  border-radius: 25px;
+  content: "";
+  display: inline-block;
+  height: 25px;
+  min-width: 25px;
+  opacity: 0;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+}
+label.card.active:before {
+  background: #ec2028;
+  background: var(--primary-color);
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFWiBIQB9ONycOZPcdEm-P7TJIJLPwKWZ0bw&s);
+  background-position: 46.5% 22.5%;
+  background-size: cover;
+  border: none;
+  opacity: 1;
+}
+label.card.active {
+  background: #eefaf4;
+  border-color: #ec2028;
+  border-color: var(--primary-color);
+}
+
+.card>input[type=radio] {
+  display: none;
+  max-height: 0;
+  max-width: 0;
+  opacity: 0;
+}
+input:not([type=checkbox]), textarea {
+  border: 1px solid #ddd;
+}
+.mts-5{
+  margin-top: 20px !important;
+}
+.address-btn {
+  background: #f2f3f5 !important;
+  flex-direction: column;
+  font-size: .9rem;
+  height: auto;
+  line-height: 1.7;
+  padding: 25px 30px;
+  width: 160px;
+}
+.address-btn:hover {
+  background: #e8f0fe !important;
+}
+.address-btn, .address-btn .icon-wrap {
+  align-items: center;
+  border: 1px solid #ddd !important;
+  display: flex;
+  justify-content: center;
+}
+
+.address-btn .icon-wrap {
+  background: #fff;
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+}
+button>.icon, span>.icon {
+  height: 20px;
+  margin: 2px 5px;
+  min-width: 20px;
+  opacity: .6;
+  width: 20px;
+}
+.plus-icon {
+  background-position: 98.6% 1.8%;
+}
+.address-btn .icon-wrap .icon {
+  height: 25px;
+  width: 25px;
+}
+
+.shipping .cart-product-tile:last-child {
+  border: none;
+}
+.rd-container {
+  cursor: pointer;
+  margin-bottom: 12px;
+  padding-left: 30px;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.mr-15 {
+  margin-right: 15px!important;
+}
+
+.color-lite {
+  color: #555;
+}
+.rd-container input {
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+}
+
+input[type=checkbox], input[type=radio] {
+  height: auto;
+  line-height: 1;
+}
+button, input:not([type=checkbox]), textarea {
+  border: none;
+  border-radius: 10px;
+  height: 44px;
+  line-height: 42px;
+  outline: 0;
+}
+input:not([type=checkbox]), textarea {
+  border: 1px solid #ddd;
+}
+.rd-checkmark {
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  height: 18px;
+  left: 0;
+  margin-top: -9px;
+  position: absolute;
+  top: 50%;
+  width: 18px;
+}
+.rd-container input:checked~.rd-checkmark {
+  border-color: #ec2028;
+  border-color: var(--primary-color);
+}
+.rd-container .rd-checkmark:after {
+  background: #ec2028;
+  background: var(--primary-color);
+  border-radius: 50%;
+  height: 8px;
+  left: 4px;
+  top: 4px;
+  width: 8px;
+}
+.rd-container input:checked~.rd-checkmark:after {
+  display: block;
+}
+
+.rd-checkmark:after {
+  content: "";
+  display: none;
+  position: absolute;
+}

@@ -1,8 +1,9 @@
 import React from 'react';
 import p1 from "../assets/p1.jpg";
+import { Link } from 'react-router-dom';
 const Cart = () => {
     return (
-            <div className="container__fluid  gap-20 mtb-sm-15 cart">
+            <div className="container__fluid  mtb-20 mtb-sm-15 cart" style={{display:"inline-block"}}>
             <div className="product-detail checkout-detail">
                 <div className="detail-left ptb-10 plr-20 plr-sm-15 mr-sm area mr-20 mb-sm-15">
                 <div className="b-b pb-10 mb-10 flex sided">
@@ -158,7 +159,7 @@ const Cart = () => {
                 </div>
                 </div>
 
-                {/* <div className="detail-right">
+                <div className="detail-right">
                 <div className="area pt-10 plr-20 plr-sm-15 pb-20 pb-sm-15">
                     <h5 className="bold b-b pb-10 mb-15">Checkout</h5>
                     <div className="flex sided mb-15">
@@ -173,13 +174,15 @@ const Cart = () => {
                         <span>৳2,200</span>
                     </h4>
                     </div>
-                    <button
-                    type="button"
-                    aria-label="Proceed to checkout"
-                    className="ajax-btn primary-btn w-100"
-                    >
-                    <span>Proceed to checkout</span>
-                    </button>
+                    <Link to="/shipping" style={{display:"block"}}>
+                        <button
+                        type="button"
+                        aria-label="Proceed to checkout"
+                        className="ajax-btn primary-btn w-100"
+                        >
+                        <span>Proceed to checkout</span>
+                        </button>
+                    </Link>
                     <div className="discounted-price success-msg mt-20">
                     <span>Your total saving amount on this order </span>
                     <h4 className="price">
@@ -187,7 +190,7 @@ const Cart = () => {
                     </h4>
                     </div>
                 </div>
-                </div> */}
+                </div> 
             </div>
             </div>
 
