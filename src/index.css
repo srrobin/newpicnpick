@@ -225,3 +225,136 @@ button, input:not([type=checkbox]), textarea {
   line-height: 42px;
   outline: 0;
 }
+.pt-20 {
+  padding-top: 20px!important;
+}
+.mb-30 {
+  margin-bottom: 30px!important;
+}
+.f-reverse {
+  flex-direction: row-reverse;
+}
+
+li {
+  font-size: 1em;
+  line-height: 1.8;
+  list-style: none;
+}
+.order-wrapper .order-details>li>span:first-child {
+  font-weight: 600;
+  width: 160px;
+}
+.order-wrapper .order-details>li>span:last-child {
+  width: 150px;
+}
+.mr-15 {
+  margin-right: 15px!important;
+}
+.lh-2, .lh-2 span {
+  line-height: 2;
+}
+.mb-15 {
+  margin-bottom: 15px!important;
+}
+.order-status {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.order-status .status-item {
+  margin: 0 15px;
+  text-align: center;
+}
+.order-status .status-item span.flex {
+  background: #eee;
+  border-radius: 100px;
+  height: 80px;
+  position: relative;
+  width: 80px;
+}
+.order-status .active span.flex {
+  background: #35628e;
+  background: #cce5ff;
+}
+.order-status .active .status-str {
+  color: #35628e;
+}
+.mtb-10 {
+  margin-bottom: 10px!important;
+  margin-top: 10px!important;
+}
+.f-9 {
+  font-size: .9em;
+}
+.order-status .status-item {
+  margin: 0 15px;
+  text-align: center;
+}
+
+
+
+.order-status .status-item span.flex {
+  background: #eee;
+  border-radius: 100px;
+  height: 80px;
+  position: relative;
+  width: 80px;
+}
+.order-status .active span.flex {
+  background: #35628e;
+  background: #cce5ff;
+}
+
+.order-status .active .status-str {
+  color: #35628e;
+}
+.mtb-10 {
+  margin-bottom: 10px!important;
+  margin-top: 10px!important;
+}
+
+.f-9 {
+  font-size: .9em;
+}
+.order-status .status-item span.flex:after, .order-status .status-item span.flex:before {
+  background: inherit;
+  content: "";
+  height: 4px;
+  left: -15px;
+  margin-top: -2px;
+  position: absolute;
+  top: 50%;
+  width: 15px;
+}
+
+ .order-status .status-item:first-child span.flex:before,.order-status .status-item:last-child span.flex:after {
+  background: transparent;
+}
+.order-status .status-item span.flex:after {
+  left: auto !important;
+  right: -15px !important;
+}
+.flow-auto {
+  overflow: auto;
+}
+.mtb-15 {
+  margin-bottom: 15px!important;
+  margin-top: 15px!important;
+}
+.order-wrapper table {
+  margin: 15px 0;
+}
+.mtb-0 {
+  margin-bottom: 0!important;
+  margin-top: 0!important;
+}
+.w-100 {
+  width: 100%;
+}
+
+.mn-w-600x {
+  min-width: 600px;
+}
+.no-bg {
+  background: transparent;
+}

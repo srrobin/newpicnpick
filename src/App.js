@@ -25,6 +25,7 @@ import TrackOrder from './containers/TrackOrder';
 import Cart from './containers/Cart';
 import Shipping from './containers/Shipping';
 import Checkout from './containers/Checkout';
+import OrderDetails from './containers/OrderDetails';
 
 function App() {
   const location = useLocation();
@@ -84,6 +85,7 @@ function App() {
           <Route path="/brands" element={<Brands />} />
           <Route path="/flash-sale" element={<HotDeals />} />
           <Route path="/user/order" element={<UserOrder />} />
+          <Route path="/user/order/:id" element={<OrderDetails />} />
           <Route path="/track-order" element={<TrackOrder />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/shipping" element={<Shipping />} />

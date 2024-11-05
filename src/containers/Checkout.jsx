@@ -1,4 +1,6 @@
 import React from 'react';
+import { FcMoneyTransfer } from "react-icons/fc";
+import { FaCcMastercard } from "react-icons/fa";
 
 const Checkout = () => {
     return (
@@ -12,12 +14,12 @@ const Checkout = () => {
                         <div className="tab-heading">
                         <label>
                             <input type="radio" name="payment" value="2" />
-                            <i className="icon cod-icon"></i>
+                            <FcMoneyTransfer className="icon cod-icon" />
                             <span>Cash on delivery</span>
                         </label>
                         <label>
                             <input type="radio" name="payment" value="8" />
-                            <i className="icon card-icon mb-5"></i>
+                            <FaCcMastercard  className="icon card-icon mb-5" style={{color:"#2195f2"}}/>
                             <span>Payment API</span>
                         </label>
                         </div>
