@@ -26,6 +26,7 @@ import Cart from './containers/Cart';
 import Shipping from './containers/Shipping';
 import Checkout from './containers/Checkout';
 import OrderDetails from './containers/OrderDetails';
+import DetailsProduct from './containers/DetailsProduct';
 
 function App() {
   const location = useLocation();
@@ -55,12 +56,8 @@ function App() {
         return '#ffffff'; 
       case '/page/sitemap':
         return '#ffffff';
-      case '/track-order':
-        return '#ffffff'; 
-      case '/page/contact':
-        return '#ffffff'; 
       default:
-        return '#e5e4e2'; 
+        return '#fff'; 
     }
   })();
 
@@ -81,6 +78,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/product/:id" element={<DetailsProduct />} />
           <Route path="/categories" element={<Categories />} />
           <Route path="/brands" element={<Brands />} />
           <Route path="/flash-sale" element={<HotDeals />} />

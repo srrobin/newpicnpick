@@ -8,7 +8,7 @@ const ProductCardBorder = ({cardBg, border}) => {
     return (
         <div className='productcardnoborder__area' >
             <div className={`p-tile collection-bg-0 ${cardBg}`}>
-                <a href='/' className={`page-link ${border}`}>
+                <a href='/product/1' className={`page-link ${border}`}>
                     <span className='block img-wrapper'>
                     <button aria-label="submit" title="Compare" className="compare-btn">
                         <TfiReload size={14}  className="icon reload-icon"/>

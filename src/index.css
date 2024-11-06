@@ -151,15 +151,10 @@ span{
 .f-12 {
   font-size: 1.2em!important;
 }
-/* .discount {
-  background: #e5e4e2;
-  border-radius: 4px;
-  color: #ec2028;
-  color: var(--primary-color);
-  font-size: .75em;
-  font-weight: 600;
-  padding: 1px 4px;
-} */
+.lazy-img {
+  opacity: 0;
+  transition: none;
+}
 .ml-10 {
   margin-left: 10px!important;
 }
