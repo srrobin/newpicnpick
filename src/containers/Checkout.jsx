@@ -1,8 +1,13 @@
 import React from 'react';
 import { FcMoneyTransfer } from "react-icons/fc";
 import { FaCcMastercard } from "react-icons/fa";
+import { useNavigate } from 'react-router-dom';
 
 const Checkout = () => {
+    const navigate = useNavigate();
+    const handleClick = () => {
+        navigate("/user/order/1")
+    }
     return (
             <div className="container__fluid mtb-20 mtb-sm-15" style={{display:"inline-block"}} >
             <div className="product-detail checkout-detail">
@@ -12,7 +17,7 @@ const Checkout = () => {
                     <form>
                     <div className="heading-tab-wrapper">
                         <div className="tab-heading">
-                        <label>
+                        <label onClick={handleClick}>
                             <input type="radio" name="payment" value="2" />
                             <FcMoneyTransfer className="icon cod-icon" />
                             <span>Cash on delivery</span>

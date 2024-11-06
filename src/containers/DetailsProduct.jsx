@@ -1,10 +1,21 @@
 import React from 'react';
 import Breadcrumb from '../components/Breadcrumb';
-import D1 from "../assets/d1.png"
+import D1 from "../assets/p1.jpg"
+import { FaWhatsapp } from "react-icons/fa6";
+import { useNavigate } from 'react-router-dom';
+
 const DetailsProduct = () => {
+    const navigate = useNavigate();
+
+    function handleAddToCart() {
+      console.log("Item added to cart");
+      navigate('/cart');
+    }
+
+
     return (
         <>
-        <div className="sticky-cart-wrap">
+        <div className="sticky-cart-wrap visually-hidden">
         <div className="container__fluid">
             <div className="sticky-cart">
             <div className="sticky-title">
@@ -37,6 +48,8 @@ const DetailsProduct = () => {
             </div>
         </div>
         </div>
+
+
         <div>
             <a
                 target="_blank"
@@ -44,10 +57,10 @@ const DetailsProduct = () => {
                 href="https://wa.me/+8801829003004?text=Hi, I want to purchase a product"
                 className="whatsapp-btn-wrap"
                 >
-                <i className="icon whatsapp-icon"></i>
+                <FaWhatsapp className="icon whatsapp-icon"/>
             </a>
             <div className="detail-menu hide-sm">
-                <div className="container-fluid">
+                <div className="container__fluid">
                     <div className="mlr--15">
                     <a href="/all/mens-wear" className="" title="Men's Wear">
                         Men's Wear
@@ -84,20 +97,6 @@ const DetailsProduct = () => {
             </div>
             <div className="container__fluid mtb-15 mt-sm-10 mn-h-400x">
                 <div>
-                        {/* <nav aria-label="breadcrumb" className="mb-20 mb-sm-15">
-                        <ol itemscope="itemscope" itemType="https://schema.org/BreadcrumbList" className="breadcrumb">
-                            <li itemProp="itemListElement" itemscope="itemscope" itemType="https://schema.org/ListItem">
-                            <a href="/" className="nuxt-link-active" itemProp="item">
-                                <span itemProp="name">Home</span>
-                            </a>
-                            <meta itemProp="position" content="1" />
-                            </li>
-                            <li itemProp="itemListElement" itemscope="itemscope" itemType="https://schema.org/ListItem" className="breadcrumb-item">
-                            <span itemProp="name">Super soft Leather shoes for Men's -PMS 105</span>
-                            <meta itemProp="position" content="2" />
-                            </li>
-                        </ol>
-                        </nav> */}
                         <Breadcrumb/>
                         <div className="product-detail">
                         <div className="detail-left pr-30 pr-sm-0">
@@ -107,7 +106,7 @@ const DetailsProduct = () => {
                                 <div className="detail-image-inner">
                                     <div className="detail-image shimmer-wrapper">
                                     <div className="hide-md mx-h-100">
-                                        <div className="mx-h-100 zoomer-base-container scroller-at-left arrow-hide" style={{ width: "422px", position: "relative" }}>
+                                        <div className="mx-h-100 zoomer-base-container scroller-at-left arrow-hide" style={{ width: "420px", position: "relative" }}>
                                         <img
                                             draggable="false"
                                             className="responsive-image preview-box"
@@ -141,7 +140,7 @@ const DetailsProduct = () => {
                                 </div>
                             </div>
                             <div className="pl-30 pl-md grow">
-                                <h1 className="f-16">Super soft Leather shoes for Men's -PMS 105</h1>
+                                <div className="f-16">Super soft Leather shoes for Men's -PMS 105</div>
                                 <div className="mt-10">
                                 <span title="0 out of 5" className="rating-stars">
                                     <span>☆☆☆☆☆</span>
@@ -158,33 +157,53 @@ const DetailsProduct = () => {
                                 </div>
                                 </div>
                                 <div className="two-sided mb-15">
-                                <span className="left">Size</span>
-                                <div className="start flex wrap gap-10">
-                                    <label className="rd-container rd-attr">
-                                    <input type="radio" name="5" value="442" />
-                                    <span className="rd-checkmark"></span>
-                                    <span className="input-content">39</span>
-                                    </label>
-                                    {/* Additional sizes here */}
-                                </div>
-                                </div>
+  <span className="left">Size</span>
+  <div className="start flex wrap gap-10">
+    <label className="rd-container rd-attr">
+      <input type="radio" name="size" value="374" />
+      <span className="rd-checkmark"></span>
+      <span className="input-content">39</span>
+    </label>
+    <label className="rd-container rd-attr">
+      <input type="radio" name="size" value="375" />
+      <span className="rd-checkmark"></span>
+      <span className="input-content">41</span>
+    </label>
+    <label className="rd-container rd-attr">
+      <input type="radio" name="size" value="376" />
+      <span className="rd-checkmark"></span>
+      <span className="input-content">42</span>
+    </label>
+    <label className="rd-container rd-attr">
+      <input type="radio" name="size" value="377" />
+      <span className="rd-checkmark"></span>
+      <span className="input-content">43</span>
+    </label>
+    <label className="rd-container rd-attr">
+      <input type="radio" name="size" value="432" />
+      <span className="rd-checkmark"></span>
+      <span className="input-content">44</span>
+    </label>
+  </div>
+</div>
+
                                 <div className="wrap two-sided mb-15 align-start">
                                 <h6 className="left">Refund &amp; warranty</h6>
                                 <div className="right">
                                     <div className="mb-5">Not refundable</div>
                                     <div>Warranty available</div>
-                                    <div className="mt-5">100% authentic</div>
+                                    <div className="mt_5">100% authentic</div>
                                 </div>
                                 </div>
                                 <div className="editor mt-30 mt-sm-15">
-                                <h5>• Brand: Run</h5>
-                                <h5>• Origin: Bangladesh.</h5>
-                                <h5>• Model: PMS 105</h5>
-                                <h5>• Color: Black</h5>
-                                <h5>• Style: Belt Sandal</h5>
-                                <h5>• Material: 100% Leather.</h5>
-                                <h5>• Upper Material: Full Genuine Leather.</h5>
-                                <h5>• Sole: Rubber</h5>
+                                <div>• Brand: Run</div>
+                                <div>• Origin: Bangladesh.</div>
+                                <div>• Model: PMS 105</div>
+                                <div>• Color: Black</div>
+                                <div>• Style: Belt Sandal</div>
+                                <div>• Material: 100% Leather.</div>
+                                <div>• Upper Material: Full Genuine Leather.</div>
+                                <div>• Sole: Rubber</div>
                                 </div>
                             </div>
                             </div>
@@ -218,7 +237,7 @@ const DetailsProduct = () => {
                                 </span>
                                 </div>
                                 <div className="flex-sm mlr-sm--2-5">
-                                <button type="button" aria-label="Add to cart" className="ajax-btn w-100 w-sm-50 outline-btn mtb-10 mlr-sm-2-5" id="add-to-cart">
+                                <button  onClick={handleAddToCart} type="button" aria-label="Add to cart" className="ajax-btn w-100 w-sm-50 outline-btn mtb-10 mlr-sm-2-5" id="add-to-cart">
                                     <span>Add to cart</span>
                                 </button>
                                 <button type="button" aria-label="Buy now" className="ajax-btn w-100 w-sm-50 primary-btn mtb-10 mlr-sm-2-5">

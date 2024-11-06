@@ -2,11 +2,17 @@ import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import { FaPlus } from "react-icons/fa6";
 import { TfiEmail } from "react-icons/tfi";
+import { useNavigate } from 'react-router-dom';
 const Shipping = () => {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+    const navigate = useNavigate();
 
+    function handleAddToCart() {
+      console.log("Item added to checkout");
+      navigate('/checkout');
+    }
     return (
             <div className="container__fluid mtb-20 mtb-sm-15" style={{display:"inline-block"}}>
             <div className="product-detail checkout-detail">
@@ -226,7 +232,7 @@ const Shipping = () => {
                         <span>৳1,200</span>
                     </h4>
                     </div>
-                    <button type="button" aria-label="Proceed to Payment" className="ajax-btn primary-btn w-100">
+                    <button onClick={handleAddToCart} type="button" aria-label="Proceed to Payment" className="ajax-btn primary-btn w-100">
                     <span>Proceed to Payment</span>
                     </button>
                     <div className="discounted-price success-msg mt-20">
