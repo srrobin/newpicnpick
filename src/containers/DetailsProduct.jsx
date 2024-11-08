@@ -35,7 +35,7 @@ const DetailsProduct = () => {
   );
   return (
     <>
-      <div className="sticky-cart-wrap visually-hidden">
+      <div className="sticky-cart-wrap ">
         <div className="container__fluid">
           <div className="sticky-cart">
             <div className="sticky-title">

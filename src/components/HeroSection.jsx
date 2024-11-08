@@ -1,4 +1,3 @@
-import React from 'react';
 
 import h1 from "../assets/h1.jpg"
 import h2 from "../assets/h2.png"
@@ -9,8 +8,8 @@ import { GrFormPrevious } from "react-icons/gr";
 const HeroSection = () => {
     return (
         <div className='main__slide hero__section'>
-            <div className='row'>
-                <div className='col-md-10'> 
+            <div className='parent'>
+                <div className='div1'> 
                 <div id="carouselExampleCaptions" class="carousel slide">
                 <div className="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -55,23 +54,12 @@ const HeroSection = () => {
                 </div>  
 
                 </div>
-                <div className='col-md-2'> 
-                    <div className='row'>
-                        <div className='col-md-12'> 
-                            <img
-                                className="d-block w-100 img-fluid image__radius "
-                                src={h3}
-                                alt="Second slide"
-                                />   
-                        </div>
-                        <div className='col-md-12 mt-4'> 
-                            <img
-                                className="d-block w-100 img-fluid image__radius"
-                                src={h4}
-                                alt="Second slide"
-                                />   
-                        </div>
-                    </div>
+
+                <div className="div2">
+                    <img src={h3} alt="Hero 2" className=' image__radius'/>
+                </div>
+                <div className="div3">
+                    <img src={h4} alt="Hero 3" className='image__radius'/>
                 </div>
             </div>
         </div>

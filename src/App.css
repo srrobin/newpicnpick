@@ -213,12 +213,9 @@ header .bottom-area>div a span {
 /* hero section css */
 .main {
   padding-top: 111px;
-  /* background: #e5e4e2; */
   min-height: 600px;
 }
-/* .main__slide{
-  height: 450px;
-} */
+
 .hero__section {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -226,6 +223,8 @@ header .bottom-area>div a span {
 .image__radius {
   border-radius: 10px;
 }
+
+
 
 /* card component css */
 .bg__black{
@@ -574,8 +573,8 @@ svg.icon.reload-icon {
   padding-right: 7.5px;
 }
 .single__features {
-  width: 130px !important;
-  /* width: calc(33.33% - 11px); */
+  /* width: 130px !important; */
+  /* width: calc(33.33% - 11px) !important; */
   text-align: center;
   background: #e5e4e2;
   display: flex;
@@ -595,7 +594,7 @@ svg.icon.reload-icon {
   padding: 15px 15px 0 !important;
 }
 .feature__body .slick-slide {
-  margin: 0px 4px  0px 0px;
+  margin: 0px 10px  0px 0px;
 }
 .brands-wrapper .brand-banner {
   display: flex;
@@ -981,7 +980,7 @@ button>.icon, span>.icon {
   border-radius: 50%;
 }
 .double_line .slick-next {
-  right: 149px !important;
+  right: 110px !important;
   color: #b0a8a8 !important;
   background: #E5E4E2!important;
   border-radius: 50%;
@@ -2245,6 +2244,59 @@ input:not([type=checkbox]), textarea {
 /* product details css */
 /* product details css */
 /* product details css */
+
+
+
+.sticky-cart {
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.sticky-cart, .sticky-cart .sticky-title {
+  align-items: center;
+  display: flex;
+  gap: 15px;
+}
+/* .sticky-cart-wrap {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transform: translateY(-100%);
+  transition: all .15s;
+  z-index: 8;
+} */
+
+.sticky-cart .sticky-title {
+  max-width: 500px;
+}
+
+
+.sticky-cart .sticky-title img {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  height: 60px;
+  width: 60px;
+}
+.btn-wrap {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+.btn-wrap .btn {
+  padding: 0 30px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 .whatsapp-btn-wrap {
