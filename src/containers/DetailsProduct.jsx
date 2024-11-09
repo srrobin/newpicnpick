@@ -153,7 +153,7 @@ const DetailsProduct = () => {
                         <div className="detail-image shimmer-wrapper">
                           <div className="hide-md mx-h-100">
                             <div
-                              className="mx-h-100 zoomer-base-container scroller-at-left arrow-hide"
+                              className="mx-h-100 zoomer-base-container  arrow-hide"
                               style={{ width: "420px", position: "relative" }}
                             >
                               <img

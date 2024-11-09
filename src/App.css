@@ -672,7 +672,7 @@ h5 {
   height: 100%;
   left: 0;
   overflow: hidden;
-  position: absolute;
+  /* position: absolute; */
   right: 0;
   top: 0;
   width: 100%;
@@ -1055,7 +1055,7 @@ button>.icon, span>.icon {
   transition: all .50s ease;
 }
 .double_line .slick-prev:hover, .double_line .slick-prev:focus, .double_line .slick-next:hover, .double_line .slick-next:focus {
-  background: rgb(0 0 0 / 27%) !important;
+  background:  rgba(0, 0, 0, 0.27) !important;
   color: #686868 !important;
 }
 .contact__title {
@@ -2690,14 +2690,7 @@ b {
   padding: 0 10px;
   white-space: nowrap;
 }
-.scroller-at-left .thumb-list[data-v-033bd07e] {
-  display: grid;
-  grid-row-gap: 0.2em;
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-  visibility: hidden;
-  justify-items: center;
-}
+
 .detail-image .thumb-list {
   align-items: center;
   justify-content: center;
