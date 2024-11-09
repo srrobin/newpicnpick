@@ -4,7 +4,8 @@ import SaleBanner from "../assets/sales-banner.png"
 const FeatureBrandsAndSeals = () => {
     return (
         <div className='gap-20'>
-            <div className="brands-wrapper">
+              <FeatureBrands/>
+            {/* <div className="brands-wrapper">
                 <div className="brands-inner">
                    <FeatureBrands/>
                 </div>
@@ -19,7 +20,7 @@ const FeatureBrandsAndSeals = () => {
                         />
                     </a>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };
