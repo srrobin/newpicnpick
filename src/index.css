@@ -144,11 +144,7 @@ span{
   padding: 0 2px;
   position: relative;
 }
-/* .priv__price {
-  text-decoration: line-through;
-  color: #aca3a3;
-  font-size: 14px;
-} */
+
 .f-12 {
   font-size: 1.2em!important;
 }
@@ -421,7 +417,7 @@ button {
   grid-template-rows: 242.5px 242.5px;
   grid-column-gap: 15px;
   grid-row-gap: 15px;
-  /* max-height: 500px; */
+
 }
 .carousel-item {
  height: 500px;
