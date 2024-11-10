@@ -552,129 +552,6 @@ svg.icon.reload-icon {
 
 
 
-.brands-wrapper {
-  display: flex;
-}
-.brands-wrapper .brands-inner {
-  max-width: 33.33%;
-  min-width: 33.33%;
-  padding-right: 7.5px;
-}
-.brands-wrapper .brand-banner {
-  display: flex;
-  max-width: 66.66%;
-  min-width: 66.66%;
-  padding-left: 7.5px;
-}
-.area {
-  background: #fff;
-  border-radius: 10px;
-}
-
-.brands-wrapper .featured-brands.area {
-  margin: 0;
-}
-.area .title {
-  border-bottom: 1px solid #eee;
-  font-weight: 600;
-  padding: 10px 15px;
-}
-.brands-wrapper .featured-brands.area .title {
-  border-bottom: 0;
-  padding-bottom: 15px;
-  padding-top: 15px;
-}
-.area .area-content {
-  padding: 10px 13px 0px;
-}
-.brands-wrapper .featured-brands.area .area-content {
-  padding-top: 0;
-}
-.area-content .slick-slide {
-  width: 114.33px !important;
-  margin-left: 5.5px;
-  margin-right: 5.5px;
-}
-
-a.single__features {
-  background: #e5e4e2;
-  border-radius: 10px;
-  margin: 0px 0 15px;
-  padding: 10px;
-}
-a.single__features:hover {
-  background: #e5e4e2;
-  border-radius: 10px;
-  margin: 0px 0 15px;
-  padding: 10px;
-}
-.img-wrapper {
-  padding-bottom: 100%;
-  position: relative;
-}
-
-a.single__features .img-wrapper img {
-  border: 1px solid #eee;
-  border-radius: 100px;
-}
-.img-wrapper .shimmer, .img-wrapper img {
-  height: auto;
-  left: 50%;
-  max-height: 90%;
-  max-width: 90%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%,-50%);
-  width: auto;
-}
-
-
-.item-title {
-  margin-top: 10px;
-  font-weight: 400;
-  font-size: 17px;
-  color: #555;
-}
-
-
-h5, h6 {
-  line-height: 1.5;
-}
-
-h5 {
-  font-size: 1.1em;
-  font-weight: 400;
-} 
-
-
-.brands-wrapper .brand-banner .banner-wrapper {
-  border-radius: 10px;
-  display: flex;
-  flex-grow: 1;
-  overflow: hidden;
-  position: relative;
-}
-.brands-wrapper .brand-banner img {
-  border-radius: 10px;
-  bottom: 0;
-  height: 100%;
-  left: 0;
-  overflow: hidden;
-
-  right: 0;
-  top: 0;
-  width: 100%;
-}
-
-
-.banner-wrapper {
-  position: relative;
-}
-
-.flow-hidden {
-  overflow: hidden;
-}
-
 .mb-0 {
   margin-bottom: 0!important;
 }
@@ -2660,4 +2537,138 @@ b {
   height: 60px!important;
   margin: 5px;
   width: 60px!important;
+}
+
+
+/* feature section */
+/* feature section */
+/* feature section */
+/* feature section */
+
+
+
+.brands-wrapper {
+  display: flex;
+}
+.brands-wrapper .brands-inner {
+  max-width: 33.33%;
+  min-width: 33.33%;
+  padding-right: 7.5px;
+}
+
+.brands-wrapper .brand-banner {
+  display: flex;
+  max-width: 66.66%;
+  min-width: 66.66%;
+  padding-left: 7.5px;
+}
+
+.area {
+  background: #fff;
+  border-radius: 10px;
+}
+
+.brands-wrapper .featured-brands.area {
+  margin: 0;
+}
+.area .title {
+  border-bottom: 1px solid #eee;
+  font-weight: 600;
+  padding: 10px 15px;
+}
+.brands-wrapper .featured-brands.area .title {
+  border-bottom: 0;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.area .area-content {
+  padding: 10px 13px 0px;
+}
+.brands-wrapper .featured-brands.area .area-content {
+  padding-top: 0;
+}
+.area-content .slick-slide {
+  width: 114.33px !important;
+  margin-left: 5.5px;
+  margin-right: 5.5px;
+}
+
+a.single__features {
+  background: #e5e4e2;
+  border-radius: 10px;
+  margin: 0px 0 15px;
+  padding: 10px;
+}
+a.single__features:hover {
+  background: #e5e4e2;
+  border-radius: 10px;
+  margin: 0px 0 15px;
+  padding: 10px;
+}
+.img-wrapper {
+  padding-bottom: 100%;
+  position: relative;
+}
+
+a.single__features .img-wrapper img {
+  border: 1px solid #eee;
+  border-radius: 100px;
+}
+.img-wrapper .shimmer, .img-wrapper img {
+  height: auto;
+  left: 50%;
+  max-height: 90%;
+  max-width: 90%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: auto;
+}
+
+
+.item-title {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 17px;
+  color: #555;
+}
+
+
+h5, h6 {
+  line-height: 1.5;
+}
+
+h5 {
+  font-size: 1.1em;
+  font-weight: 400;
+} 
+
+.banner-wrapper {
+  position: relative;
+}
+
+.brands-wrapper .brand-banner .banner-wrapper {
+  border-radius: 10px;
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.brands-wrapper .brand-banner img {
+  border-radius: 10px;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+
+
+.flow-hidden {
+  overflow: hidden;
 }

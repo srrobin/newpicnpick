@@ -21,8 +21,6 @@ const FeatureBrands = () => {
 
 
     return (
-        <div className='brands-wrapper'>
-        <div className="brands-inner">
         <div className="area home-section featured-brands">
             <div className="flex sided title">
             <h4>Featured Brands</h4>
@@ -189,19 +187,7 @@ const FeatureBrands = () => {
             </Slider>
             </div>
         </div>
-        </div>
-
-        <div className="brand-banner">
-        <a href="/products/sale?banner=1" className="block banner-wrapper">
-            <img 
-            src={sb}
-            alt="Sale" 
-            height="100" 
-            width="500" 
-            />
-        </a>
-        </div>
-        </div>
+      
     );
 };
 
