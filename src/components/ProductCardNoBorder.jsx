@@ -3,12 +3,13 @@ import p1 from "../assets/p1.jpg";
 import { MdOutlineStarBorderPurple500 } from "react-icons/md";
 import { MdOutlineStarPurple500 } from "react-icons/md";
 import { TfiReload } from "react-icons/tfi";
+import { Link } from 'react-router-dom';
 
 const ProductCardBorder = ({cardBg, border}) => {
     return (
         <div className='productcardnoborder__area' >
             <div className={`p-tile collection-bg-0 ${cardBg}`}>
-                <a href='/product/1' className={`page-link ${border}`}>
+                <Link to='/product/1' className={`page-link ${border}`}>
                     <span className='block img-wrapper'>
                     <button aria-label="submit" title="Compare" className="compare-btn">
                         <TfiReload size={14}  className="icon reload-icon"/>
@@ -35,7 +36,7 @@ const ProductCardBorder = ({cardBg, border}) => {
                         <div className='current__price'>৳ 1,100</div>
                         <div className='discount__rate'> -32% </div>
                     </div>
-                </a>
+                </Link>
             </div>
         </div>
     );
