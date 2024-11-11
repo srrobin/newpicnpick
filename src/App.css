@@ -2664,11 +2664,75 @@ h5 {
   position: absolute;
   right: 0;
   top: 0;
+  width: 100%;
 }
-
-
-
 
 .flow-hidden {
   overflow: hidden;
+}
+button>.icon.arrow-down, button>.icon.arrow-left, button>.icon.arrow-right, button>.icon.arrow-up, span>.icon.arrow-down, span>.icon.arrow-left, span>.icon.arrow-right, span>.icon.arrow-up {
+  height: 16px;
+  min-width: 16px;
+  width: 16px;
+}
+
+.arrow-down.black, .arrow-up.black {
+  background-position: 23% 1.5%;
+}
+
+/* responsive css */
+@media( max-width: 768px ){
+  header .container__fluid.flex {
+    display: block;
+}
+header .left-area {
+  min-height: 30px;
+}
+header .left-area, header .right-area {
+  width: auto;
+}
+.mx-h-30x-xs {
+  max-height: 30px;
+}
+header button, header input {
+  height: 40px!important;
+}
+header .container__fluid.flex .right-area {
+  position: absolute;
+  right: 15px;
+  top: -10px;
+}
+.xs__display {
+  display: flex !important;
+  align-items: center !important;
+}
+
+header .container__fluid.flex .right-area img {
+  height: 30px;
+  width: 30px;
+}
+
+header .left-area, header .right-area {
+  width: auto;
+}
+header form {
+  margin: 5px 0 0;
+}
+
+.hide-xs {
+  display: none;
+}
+.block-xs {
+  display: block !important;
+}
+
+.logo img {
+    width: 70px;
+    object-fit: cover;
+}.sided {
+  overflow-x: scroll;
+}
+}
+@media( max-width: 992px ){
+ 
 }

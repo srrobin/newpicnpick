@@ -2,6 +2,7 @@ import React from 'react';
 import { BsCart3 } from "react-icons/bs";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { Link, NavLink } from 'react-router-dom';
+import User from "../assets/user.png"
 const Menubar = () => {
     return (
         <header className="no-banner">
@@ -32,8 +33,16 @@ const Menubar = () => {
             {/* Right area with My Account and Cart */}
             <div className="right-area flex gap-15 right">
             <div className="dropdown">
-            <button className="btn  dropdown-toggle custom-dropdown " type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              My Account <MdKeyboardArrowDown />
+            <button className="btn xs__display dropdown-toggle custom-dropdown " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <span  className="hide-xs"> My Account </span> 
+
+            <img src={User}
+                height="50" width="50"  
+                className="hide block-xs mx-w-28x "
+                alt='use'
+            />
+            <MdKeyboardArrowDown  style={{ fontSize:"20px"}} className='icon arrow-down black'/>
+
             </button>
             <ul className="dropdown-menu">
               <li><Link className="dropdown-item" to="/user/order">Orders</Link></li>
