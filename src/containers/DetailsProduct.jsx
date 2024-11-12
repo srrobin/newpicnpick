@@ -10,6 +10,7 @@ import { FaPinterest } from "react-icons/fa";
 import {  OverlayTrigger, Popover } from "react-bootstrap";
 import { SlClose } from "react-icons/sl";
 import SuggestionProducts from "../components/SuggestionProducts"
+import ProductImageMagnify from "../components/ProductImageMagnify";
 
 const DetailsProduct = () => {
     const [show, setShow] = useState(false);
@@ -35,7 +36,7 @@ const DetailsProduct = () => {
   );
   return (
     <>
-      <div className="sticky-cart-wrap ">
+      <div className="sticky-cart-wrap " style={{ paddingTop: '30px' }}>
         <div className="container__fluid">
           <div className="sticky-cart">
             <div className="sticky-title">
@@ -145,71 +146,21 @@ const DetailsProduct = () => {
           <div>
             <Breadcrumb />
             <div className="product-detail">
-              <div className="detail-left pr-30 pr-sm-0">
+              <div className="detail-left">
                 <div className="flex start align-start block-md">
-                  <div className="product-main">
-                    <div className="detail-image-wrapper">
-                      <div className="detail-image-inner">
-                        <div className="detail-image shimmer-wrapper">
-                          <div className="hide-md mx-h-100">
-                            <div
-                              className="mx-h-100 zoomer-base-container  arrow-hide"
-                              style={{ width: "420px", position: "relative" }}
-                            >
-                              <img
-                                draggable="false"
-                                className="responsive-image preview-box"
-                                src={D1}
-                                data-zoom="https://www.picnpick.com/uploads/product-1728131264-8.jpg"
-                                alt="Super soft Leather shoes for Men's -PMS 105"
-                              />
-                              <div
-                                className="thumb-list"
-                                style={{
-                                  height: "350px",
-                                  width: "70px",
-                                  gridTemplateRows:
-                                    "calc(100%/6/2) repeat(4, auto) calc(100%/6/2)",
-                                  visibility: "visible",
-                                }}
-                              >
-                                <img
-                                  src={D1}
-                                  alt="move thumb icon"
-                                  className="zoomer-control responsive-image"
-                                />
-                                <img
-                                  draggable="false"
-                                  src={D1}
-                                  className="responsive-image"
-                                  alt="Thumbnail "
-                                />
-                                <img
-                                  draggable="false"
-                                  src={D1}
-                                  className="responsive-image"
-                                  alt="Thumbnail "
-                                />
-                              </div>
-                              <div
-                                id="zoomer-pane-container"
-                                className="pane-container"
-                                style={{
-                                  width: "400px",
-                                  height: "478.333px",
-                                  left: "405px",
-                                  display: "none",
-                                }}
-                              ></div>
-                            </div>
-                          </div>
-                          <p className="mt__5 pb-15 text-center lh-30 hide-md">
-                            <span>Roll over image to zoom in</span>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+
+
+
+
+
+<ProductImageMagnify/>
+
+
+
+
+
+
+
                   <div className="pl-30 pl-md grow">
                     <div className="f-16">
                       Super soft Leather shoes for Men's -PMS 105

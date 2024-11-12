@@ -6,7 +6,7 @@ import { TfiReload } from "react-icons/tfi";
 
 const ProductCardBorder = ({cardBg, border}) => {
     return (
-        <div className='productcardborder__area' >
+        <div className='productcardborder__area'  style={{ width: '100%' }}>
             <div className={`p-tile collection-bg-0 ${cardBg}`}>
                 <a href='/' className={`page-link ${border}`}>
                     <span className='block img-wrapper'>

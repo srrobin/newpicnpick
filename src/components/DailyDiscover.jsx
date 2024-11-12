@@ -6,7 +6,7 @@ const DailyDiscover = () => {
     return (
         <div className='gap-20 '> 
         <CardCase cardTitle='Daily discover' cardBtntext="" cardBtnLink=""cardBg="bg__white" cardBorder="border__white">
-          <div className='d-flex gap-3  flex-wrap '>
+          <div className='topselling__product2'>
             <ProductCardBorder cardBg="cardWhite" border="border"/>
             <ProductCardBorder cardBg="cardWhite" border="border"/>
             <ProductCardBorder cardBg="cardWhite" border="border"/>

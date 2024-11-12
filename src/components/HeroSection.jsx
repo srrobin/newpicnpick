@@ -40,13 +40,13 @@ const HeroSection = () => {
                     </div>
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    <span className="carousel-control-prev-icon" aria-hidden="true">
+                    <span className="carousel-control-prev-icon" aria-hidden="true" style={{ flexShrink: '0' }}>
                     <GrFormPrevious />
                     </span>
                     <span className="visually-hidden">Previous</span>
                 </button>
                 <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                    <span className="carousel-control-next-icon" aria-hidden="true">
+                    <span className="carousel-control-next-icon" aria-hidden="true" style={{ flexShrink: '0' }}>
                     <GrFormNext />
                     </span>
                     <span className="visually-hidden">Next</span>
@@ -55,11 +55,19 @@ const HeroSection = () => {
 
                 </div>
 
-                <div className="div2">
-                    <img src={h3} alt="Hero 2" className=' image__radius'/>
+                <div className="inner-image-parent">
+                    
+                    
+                    <div className="div2">
+                    <img src={h3} alt="Hero 2" className='image__radius' />
+                    </div>
+                    <div>
+                    <img src={h4} alt="Hero 3" className='image__radius' />
+                    </div>
+                {/* <div className="div2">
                 </div>
                 <div className="div3">
-                    <img src={h4} alt="Hero 3" className='image__radius'/>
+                </div> */}
                 </div>
             </div>
         </div>

@@ -12,7 +12,7 @@ import b10 from "../assets/c10.png"
 const Categories = () => {
     return (
         <div className="container__fluid gap-20 ptb-sm-15 flow-hidden">
-            <div className='category-tile-wrapper'>
+            <div className='category-tile-wrapper2'>
                 <a href="/" className="block page-link category-tile" >
                    <div className="img-wrapper">
                     <img 

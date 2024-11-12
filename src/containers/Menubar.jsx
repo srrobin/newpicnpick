@@ -22,10 +22,10 @@ const Menubar = () => {
             </div>
             
             {/* Search bar */}
-            <form className="search-input grow mx-h-30x-xs">
+            <form className="search-input grow margin-y-nav mx-h-30x-xs">
                 <input type="text" placeholder="Search picnpick" className="mx-h-30x-xs" />
                 <button aria-label="submit search" type="submit" className="flex mx-h-30x-xs">
-                <i className="icon search-icon"></i>
+                {/* <i className="icon search-icon"></i> */}
                 Search
                 </button>
             </form>

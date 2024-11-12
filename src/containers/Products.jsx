@@ -6,7 +6,7 @@ import ProductCardNoBorder from '../components/ProductCardNoBorder';
 const Products = () => {
     return (
         <>
-            <div className="detail-menu">
+            <div className="detail-menu product-page-detail-menu">
                 <div className="container__fluid">
                     <div className="list-heading flex sided">
                     <p className="hide-sm">
@@ -43,7 +43,7 @@ const Products = () => {
                 </div>
             </div>
             <div  className="container__fluid mtb-20 mtb-sm-15">
-               <div className='product-list'>
+               <div className='product-list-page'>
                     <div className="left-area">
                     <div className="layer"></div>
                     <div className="sticky">
@@ -78,35 +78,36 @@ const Products = () => {
                             </ul>
                         </div>
 
-                        <div className="sidebar-section mt-xs-5 mb-xs-10">
+                        <div className="sidebar-section mt-xs-5 mb-xs-10" style={{ marginTop: '15px' }}>
                             <h4 className="title">Price</h4>
                             <button aria-label="submit" disabled className="clear-btn mb-10">Any price</button>
-                            <div className="price-search flex">
-                            <div className="input-wrap">
+                            <div className="price-search flex" style={{ flexDirection: 'column' }}>
+                            <div className="input-wrap" style={{ width: '100%' }}>
                                 <div className="input-text">
                                 <span>৳</span>
                                 <input type="number" placeholder="Min" />
                                 </div>
                             </div>
-                            <div className="input-wrap">
+                            <div className="input-wrap" style={{ width: '100%' }}>
                                 <div className="input-text">
                                 <span>৳</span>
                                 <input type="number" placeholder="Max" />
                                 </div>
                             </div>
-                            <button aria-label="submit" className="outline-btn plr-10">Go</button>
+                            {/* <button aria-label="submit" className="outline-btn plr-10">Go</button> */}
                             </div>
                         </div>
 
-                        <div className="sidebar-section star-filter mt-xs-10 mb-xs-10">
+                        <div className="sidebar-section star-filter mt-xs-10 mb-xs-10" style={{ marginTop: '15px' }}>
                             <h4 className="title">Customer reviews</h4>
-                            <button aria-label="submit" disabled className="clear-btn">Clear</button>
+                            {/* <button aria-label="submit" disabled className="clear-btn">Clear</button> */}
                             {[20, 40, 60, 80].map((width, i) => (
-                            <button key={i} aria-label="submit" className="mtb-5">
+                            <button key={i} aria-label="submit" className="mtb-5" style={{ display: 'flex', flexDirection: 'column' }}>
                                 <span title={`${i + 1} out of 5`} className="rating-stars">
                                 <span>☆☆☆☆☆</span>
                                 <span className="rating" style={{ width: `${width}%` }}>★★★★★</span>
-                                </span> & up
+                                <span style={{ color: 'black', paddingLeft: '25px' }}>& up</span>
+                                </span>
                             </button>
                             ))}
                         </div>
@@ -166,7 +167,7 @@ const Products = () => {
                         Showing 1 to 30 of 89 results <span className="bold">"Discover"</span>
                         </p>
 
-                        <div className="tile-container"> 
+                        <div className="tile-container products__product-page"> 
                             <div className='singleproduct__area'>
                              <ProductCardNoBorder cardBg="cardWhite" />
                             </div> 
