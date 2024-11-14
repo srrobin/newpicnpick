@@ -413,14 +413,22 @@ button {
 
 .parent {
   display: flex;
-  max-height: 620px;
+  max-height: 450px;
   column-gap: 15px;
 }
 
 @media (max-width: 768px) {
   .parent {
+    max-height: fit-content !important;
     flex-direction: column;
     row-gap: 12px;
+    margin-top: 42px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .parent {
+    max-height: 520px;
   }
 }
 
