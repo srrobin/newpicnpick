@@ -8,7 +8,16 @@ import FeatureBrandsAndSeals from '../components/FeatureBrandsAndSeals';
 import ProductBanner from '../components/ProductBanner';
 import sb1 from "../assets/sb1.png"
 import sb2 from "../assets/sb2.jpg"
+import useAxios from '../utils/useAxios';
+
 const HomePage = () => {
+
+    const { loading, data, error } = useAxios('home');
+
+    if(loading){
+        return <p>Loading...</p>
+    }
+
     return (
         <div className='container__fluid'>
                <HeroSection />

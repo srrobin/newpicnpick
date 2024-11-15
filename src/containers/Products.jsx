@@ -47,10 +47,10 @@ const Products = () => {
                     <div className="left-area">
                     <div className="layer"></div>
                     <div className="sticky">
-                        <div className="close-btn-wrapper">
+                        {/* <div className="close-btn-wrapper">
                         <button aria-label="submit">Close</button>
-                        </div>
-                        
+                        </div> */}
+                    
                         <div className="sidebar">
                         <div className="category-wrapper">
                             <ul className="table-tree">
@@ -94,7 +94,7 @@ const Products = () => {
                                 <input type="number" placeholder="Max" />
                                 </div>
                             </div>
-                            {/* <button aria-label="submit" className="outline-btn plr-10">Go</button> */}
+                            <button aria-label="submit" className="outline-btn plr-10" style={{ width: '100%' }}>Go</button>
                             </div>
                         </div>
 
@@ -102,7 +102,7 @@ const Products = () => {
                             <h4 className="title">Customer reviews</h4>
                             {/* <button aria-label="submit" disabled className="clear-btn">Clear</button> */}
                             {[20, 40, 60, 80].map((width, i) => (
-                            <button key={i} aria-label="submit" className="mtb-5" style={{ display: 'flex', flexDirection: 'column' }}>
+                            <button key={i} aria-label="submit" style={{ display: 'flex', flexDirection: 'column', height: 'fit-content' }}>
                                 <span title={`${i + 1} out of 5`} className="rating-stars">
                                 <span>☆☆☆☆☆</span>
                                 <span className="rating" style={{ width: `${width}%` }}>★★★★★</span>
@@ -112,7 +112,7 @@ const Products = () => {
                             ))}
                         </div>
 
-                        <div className="sidebar-section mt-xs">
+                        <div className="sidebar-section mt-xs" style={{ marginTop: '10px' }}>
                             <h4 className="title mb-xs-5">Brands</h4>
                             <div className="collapsible">
                             {[

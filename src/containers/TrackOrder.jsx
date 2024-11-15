@@ -5,7 +5,7 @@ import { BsBoxSeam } from "react-icons/bs";
 
 const TrackOrder = () => {
     return (
-        <div className='containers'>
+        <div className='containers tract-order'>
         <Breadcrumb />
 
         {/* <div className='contact_area'>
@@ -35,7 +35,7 @@ const TrackOrder = () => {
                     </div>
                 </form>
                 </div>
-                <div className="img-wrap">
+                <div className="img-wrap track-order-img">
                 <img src={trackOrder} alt="trac order"  />
                 </div>
             </div>

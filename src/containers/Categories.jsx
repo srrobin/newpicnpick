@@ -9,7 +9,15 @@ import b7 from "../assets/c7.png"
 import b8 from "../assets/c8.png"
 import b9 from "../assets/c9.png"
 import b10 from "../assets/c10.png"
+import useAxios from '../utils/useAxios';
 const Categories = () => {
+
+    const { loading, data, error } = useAxios('categories');
+
+    if(loading){
+        return <p>Loading...</p>
+    }
+
     return (
         <div className="container__fluid gap-20 ptb-sm-15 flow-hidden">
             <div className='category-tile-wrapper2'>

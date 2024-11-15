@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Cart = () => {
     return (
             <div className="container__fluid  mtb-20 mtb-sm-15 cart" style={{display:"inline-block"}}>
-            <div className="product-detail checkout-detail">
+            <div className="product-detail checkout-detail cart-item-list">
                 <div className="detail-left ptb-10 plr-20 plr-sm-15 mr-sm area mr-20 mb-sm-15">
                 <div className="b-b pb-10 mb-10 flex sided">
                     <h5 className="bold">Shopping cart</h5>
