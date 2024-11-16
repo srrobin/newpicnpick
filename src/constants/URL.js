@@ -1,0 +1,1 @@
+export const MEDIA_BASE_URL = "https://www.picnpick.com/uploads/"

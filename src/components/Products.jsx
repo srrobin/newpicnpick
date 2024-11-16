@@ -4,7 +4,7 @@ import ProductCard from './ProductCard';
 import Slider from "react-slick";
 import { GrFormNext } from "react-icons/gr";
 import { GrFormPrevious } from "react-icons/gr";
-const Products = () => {
+const Products = ({ data }) => {
   var settings = {
     dots: false,
     infinite: false,
@@ -41,24 +41,16 @@ const Products = () => {
       }
     ]
   };
+  
+
     return (
         <div className='gap-20 '> 
         <CardCase cardTitle='products' cardBtntext="Show all" cardBtnLink="/" cardBg="bg__black"   cardBorder="border__white">
           <div className='slider-container'>
-          <Slider {...settings}> 
-            <ProductCard cardBg="cardWhite"/>
-            <ProductCard cardBg="cardWhite"/>
-            <ProductCard cardBg="cardWhite"/>
-            <ProductCard cardBg="cardWhite"/>
-            <ProductCard cardBg="cardWhite"/>
-            <ProductCard cardBg="cardWhite"/>
-            <ProductCard cardBg="cardWhite"/>
-            <ProductCard cardBg="cardWhite"/>
-            <ProductCard cardBg="cardWhite"/>
-            <ProductCard cardBg="cardWhite"/>
-            <ProductCard cardBg="cardWhite"/>
-            <ProductCard cardBg="cardWhite"/>
-
+          <Slider {...settings}>
+            {
+              data?.product_collections?.map(itm => <ProductCard cardBg="cardWhite" key={itm?.id} data={itm}/>)
+            }
           </Slider>
           </div>
         </CardCase>

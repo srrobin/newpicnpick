@@ -4,8 +4,10 @@ import sb from '../assets/sales-banner.png';
 import Slider from "react-slick";
 import { GrFormNext } from "react-icons/gr";
 import { GrFormPrevious } from "react-icons/gr";
+import { Link } from 'react-router-dom';
+import { MEDIA_BASE_URL } from '../constants/URL';
 
-const FeatureBrands = () => {
+const FeatureBrands = ({ data }) => {
     let sliderRef = useRef(null);
     const settings = {
         // className: "center",
@@ -28,7 +30,6 @@ const FeatureBrands = () => {
         sliderRef.slickPrev();
     };
 
-
     return (
         <div className="area home-section featured-brands">
             <div className="flex sided title">
@@ -49,154 +50,24 @@ const FeatureBrands = () => {
                         sliderRef = slider;
                     }}>
 
-                    <a href='/' className="single__features text-center block page-link"  >
-                        <div className="img-wrapper">
-                            <img
-                                src={b1}
-                                alt="Addidus brand logo"
-                                width="50"
-                                height="50"
-                                className="lazy-img"
-                                style={{ opacity: 1 }}
-                            />
-                        </div>
-                        <div className="item-title">Addidus</div>
-                    </a>
-
-                    <a href='/' className="single__features text-center block page-link"  >
-                        <div className="img-wrapper">
-                            <img
-                                src={b1}
-                                alt="Addidus brand logo"
-                                width="50"
-                                height="50"
-                                className="lazy-img"
-                                style={{ opacity: 1 }}
-                            />
-                        </div>
-                        <div className="item-title">Addidus</div>
-                    </a>
-
-                    <a href='/' className="single__features text-center block page-link"  >
-                        <div className="img-wrapper">
-                            <img
-                                src={b1}
-                                alt="Addidus brand logo"
-                                width="50"
-                                height="50"
-                                className="lazy-img"
-                                style={{ opacity: 1 }}
-                            />
-                        </div>
-                        <div className="item-title">Addidus</div>
-
-                    </a>
-
-                    <a href='/' className="single__features text-center block page-link"  >
-                        <div className="img-wrapper">
-                            <img
-                                src={b1}
-                                alt="Addidus brand logo"
-                                width="50"
-                                height="50"
-                                className="lazy-img"
-                                style={{ opacity: 1 }}
-                            />
-                        </div>
-                        <div className="item-title">Addidus</div>
-
-                    </a>
-
-                    <a href='/' className="single__features text-center block page-link"  >
-                        <div className="img-wrapper">
-                            <img
-                                src={b1}
-                                alt="Addidus brand logo"
-                                width="50"
-                                height="50"
-                                className="lazy-img"
-                                style={{ opacity: 1 }}
-                            />
-                        </div>
-                        <div className="item-title">Addidus</div>
-
-                    </a>
-
-                    <a href='/' className="single__features text-center block page-link"  >
-                        <div className="img-wrapper">
-                            <img
-                                src={b1}
-                                alt="Addidus brand logo"
-                                width="50"
-                                height="50"
-                                className="lazy-img"
-                                style={{ opacity: 1 }}
-                            />
-                        </div>
-                        <div className="item-title">Addidus</div>
-
-                    </a>
-
-                    <a href='/' className="single__features text-center block page-link"  >
-                        <div className="img-wrapper">
-                            <img
-                                src={b1}
-                                alt="Addidus brand logo"
-                                width="50"
-                                height="50"
-                                className="lazy-img"
-                                style={{ opacity: 1 }}
-                            />
-                        </div>
-                        <div className="item-title">Addidus</div>
-
-                    </a>
-
-                    <a href='/' className="single__features text-center block page-link"  >
-                        <div className="img-wrapper">
-                            <img
-                                src={b1}
-                                alt="Addidus brand logo"
-                                width="50"
-                                height="50"
-                                className="lazy-img"
-                                style={{ opacity: 1 }}
-                            />
-                        </div>
-                        <div className="item-title">Addidus</div>
-
-                    </a>
-
-                    <a href='/' className="single__features text-center block page-link"  >
-                        <div className="img-wrapper">
-                            <img
-                                src={b1}
-                                alt="Addidus brand logo"
-                                width="50"
-                                height="50"
-                                className="lazy-img"
-                                style={{ opacity: 1 }}
-                            />
-                        </div>
-                        <div className="item-title">Addidus</div>
-
-                    </a>
-
-                    <a href='/' className="single__features text-center block page-link"  >
-                        <div className="img-wrapper">
-                            <img
-                                src={b1}
-                                alt="Addidus brand logo"
-                                width="50"
-                                height="50"
-                                className="lazy-img"
-                                style={{ opacity: 1 }}
-                            />
-                        </div>
-                        <div className="item-title">Addidus</div>
-
-                    </a>
-
+                    {
+                        data?.map(itm => (
+                            <Link href='/' className="single__features text-center block page-link" key={itm?.id}>
+                            <div className="img-wrapper">
+                                <img
+                                    src={MEDIA_BASE_URL+itm?.image}
+                                    alt="Addidus brand logo"
+                                    width="50"
+                                    height="50"
+                                    className="lazy-img"
+                                    style={{ opacity: 1 }}
+                                />
+                            </div>
+                            <div className="item-title">{itm?.title}</div>
+                        </Link>
+                        )
+                        )
+                    }
                 </Slider>
             </div>
         </div>

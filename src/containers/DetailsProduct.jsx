@@ -2,22 +2,28 @@ import React, { useState } from "react";
 import Breadcrumb from "../components/Breadcrumb";
 import D1 from "../assets/p1.jpg";
 import { FaWhatsapp } from "react-icons/fa6";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { CiLock } from "react-icons/ci";
 import { ImFacebook2 } from "react-icons/im";
 import { RiTwitterXLine } from "react-icons/ri";
 import { FaPinterest } from "react-icons/fa";
-import {  OverlayTrigger, Popover } from "react-bootstrap";
+import { OverlayTrigger, Popover } from "react-bootstrap";
 import { SlClose } from "react-icons/sl";
 import SuggestionProducts from "../components/SuggestionProducts"
 import ProductImageMagnify from "../components/ProductImageMagnify";
+import useAxios from "../utils/useAxios";
+import { MEDIA_BASE_URL } from "../constants/URL";
+import { Rating } from "react-simple-star-rating";
 
 const DetailsProduct = () => {
-    const [show, setShow] = useState(false);
+  const [show, setShow] = useState(false);
+  const {id} = useParams();
 
   const handleToggle = () => setShow(!show);
   const handleClose = () => setShow(false);
   const navigate = useNavigate();
+
+  const {loading, data, error} = useAxios(`product/${id}`)
 
   function handleAddToCart() {
     console.log("Item added to cart");
@@ -27,13 +33,18 @@ const DetailsProduct = () => {
     <Popover id="popover-basic">
       <Popover.Header as="h3" className="d-flex justify-content-between align-items-center" >
         <span>Transaction is secured</span>
-        <SlClose  onClick={handleClose} style={{cursor:"pointer"}}/>
-     </Popover.Header>
+        <SlClose onClick={handleClose} style={{ cursor: "pointer" }} />
+      </Popover.Header>
       <Popover.Body>
-      Secure transaction We work hard to protect your security and privacy. Our payment security system encrypts your information during transmission. We don’t share your credit card details with third-party sellers.
+        Secure transaction We work hard to protect your security and privacy. Our payment security system encrypts your information during transmission. We don’t share your credit card details with third-party sellers.
       </Popover.Body>
     </Popover>
   );
+
+  if(loading){
+    return <p>Loading...</p>
+}
+
   return (
     <>
       <div className="sticky-cart-wrap " style={{ paddingTop: '30px' }}>
@@ -46,12 +57,12 @@ const DetailsProduct = () => {
                 height="50"
                 width="50"
                 className="lazy-img"
-                src={D1}
+                src={MEDIA_BASE_URL+data?.data?.image}
                 data-loaded="true"
                 style={{ opacity: 1 }}
               />
               <h5 className="ellipsis ellipsis-2">
-                Super soft Leather shoes for Men's -PMS 105
+                {data?.data?.title}
               </h5>
             </div>
             <div className="btn-wrap">
@@ -153,7 +164,7 @@ const DetailsProduct = () => {
 
 
 
-<ProductImageMagnify/>
+                  <ProductImageMagnify data={data?.data?.images} />
 
 
 
@@ -163,17 +174,25 @@ const DetailsProduct = () => {
 
                   <div className="pl-30 pl-md grow">
                     <div className="f-16">
-                      Super soft Leather shoes for Men's -PMS 105
+                      { data?.data?.title }
                     </div>
                     <div className="mt-10">
                       <span title="0 out of 5" className="rating-stars">
-                        <span>☆☆☆☆☆</span>
-                        <span className="rating" style={{ width: "0%" }}>
+                        {/* <span>☆☆☆☆☆</span> */}
+                        {/* <span className="rating" style={{ width: "0%" }}>
                           ★★★★★
-                        </span>
+                        </span> */}
+                           <Rating
+                                initialValue={data?.data?.rating || 0}
+                                readonly
+                                fillColor='yellow'
+                                size={12}
+                                allowFraction={true}
+                                iconsCount={5}
+                            />
                       </span>
                       <span className="f-10 ml-5 semi-bold color-lite">
-                        0 Reviews
+                        {data?.data?.rating} Reviews
                       </span>
                     </div>
                     <div className="devider w-md-100 mtb-15">&nbsp;</div>
@@ -245,8 +264,8 @@ const DetailsProduct = () => {
                 <div className="sticky-right">
                   <div className="content">
                     <h2 className="price-wrapper mb-5">
-                      <span className="color-deep price">৳1,590</span>
-                      <span className="strike-through f-7">৳3,180</span>
+                      <span className="color-deep price">৳{data?.data?.offered}</span>
+                      <span className="strike-through f-7">৳{data?.data?.selling}</span>
                     </h2>
                     <div>
                       <span className="mr-5 block">
@@ -297,20 +316,20 @@ const DetailsProduct = () => {
                         <CiLock className="no-click icon lock-icon mr-5 opacity-35 dimen-20x" />
                         Secure transaction
                       </button> */}
-                    <OverlayTrigger 
-                    trigger="click" 
-                    placement="bottom" 
-                    overlay={popover}
-                    show={show}
-                    onToggle={handleToggle}
-                    >
-                        <button 
-                         className="clear-height ml--7-5 mtb-10 f-10 semi-bold flex color-deep"
+                      <OverlayTrigger
+                        trigger="click"
+                        placement="bottom"
+                        overlay={popover}
+                        show={show}
+                        onToggle={handleToggle}
+                      >
+                        <button
+                          className="clear-height ml--7-5 mtb-10 f-10 semi-bold flex color-deep"
                         >
-                        <CiLock className="no-click icon lock-icon mr-5 opacity-35 dimen-20x" />
-                        Secure transaction
+                          <CiLock className="no-click icon lock-icon mr-5 opacity-35 dimen-20x" />
+                          Secure transaction
                         </button>
-                    </OverlayTrigger>
+                      </OverlayTrigger>
                     </div>
                     <p className="f-9">
                       Arrives:{" "}
@@ -329,15 +348,15 @@ const DetailsProduct = () => {
                   <div className="flex start mt-15 mt-sm social-share hide-sm mb-15">
                     <span className="mr-10 color-lite hide-sm">Share:</span>
                     <a href="/" className="share-network-facebook">
-                      <ImFacebook2 className=" facebook-icon" size={19}/>
+                      <ImFacebook2 className=" facebook-icon" size={19} />
                       <span className="hide block-sm">Facebook</span>
                     </a>
                     <a href="/" className="mlr-5 share-network-twitter">
-                      <RiTwitterXLine className=" twitter-icon" size={19}/>
+                      <RiTwitterXLine className=" twitter-icon" size={19} />
                       <span className="hide block-sm">X</span>
                     </a>
                     <a href="/" className="share-network-pinterest">
-                      <FaPinterest className=" pinterest-icon"size={19} />
+                      <FaPinterest className=" pinterest-icon" size={19} />
                       <span className="hide block-sm">Pinterest</span>
                     </a>
                   </div>
@@ -364,24 +383,24 @@ const DetailsProduct = () => {
         <div className="container__fluid suggested-container mn-h-400x ">
           <div>
             <div className="">
-                <div className="b-t pt-20 pt-sm-15 npb-5">
-                    <div className="flex sided align-start">
-                        <h4 className="bold">Recommended for you</h4>
-                    </div>
-                    
-                    <div className="c_slider__wrapper">
-                        <SuggestionProducts />
-                    </div>
+              <div className="b-t pt-20 pt-sm-15 npb-5">
+                <div className="flex sided align-start">
+                  <h4 className="bold">Recommended for you</h4>
                 </div>
-                <div className="b-t pt-20 pt-sm-15 npb-5">
-                    <div className="flex sided align-start">
-                        <h4 className="bold">People who viewed this item also viewed</h4>
-                    </div>
-                    
-                    <div className="c_slider__wrapper">
-                        <SuggestionProducts />
-                    </div>
+
+                <div className="c_slider__wrapper">
+                  <SuggestionProducts />
                 </div>
+              </div>
+              <div className="b-t pt-20 pt-sm-15 npb-5">
+                <div className="flex sided align-start">
+                  <h4 className="bold">People who viewed this item also viewed</h4>
+                </div>
+
+                <div className="c_slider__wrapper">
+                  <SuggestionProducts />
+                </div>
+              </div>
             </div>
           </div>
         </div>

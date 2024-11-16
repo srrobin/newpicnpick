@@ -9,10 +9,13 @@ import ProductBanner from '../components/ProductBanner';
 import sb1 from "../assets/sb1.png"
 import sb2 from "../assets/sb2.jpg"
 import useAxios from '../utils/useAxios';
+import { MEDIA_BASE_URL } from '../constants/URL';
 
 const HomePage = () => {
 
     const { loading, data, error } = useAxios('home');
+    
+console.log('cis = data',data);
 
     if(loading){
         return <p>Loading...</p>
@@ -20,18 +23,18 @@ const HomePage = () => {
 
     return (
         <div className='container__fluid'>
-               <HeroSection />
-               <Products/>
-               <TrendingProducts/>
-               <FeatureBrandsAndSeals/>
-               <TopSellingProducts/>
+               <HeroSection data={data?.data?.slider} />
+               <Products data={data?.data?.collections[0]} />
+               <TrendingProducts data={data?.data?.collections[1]}  />
+               <FeatureBrandsAndSeals data={data?.data?.featured_brands} banner={data?.data?.banners[0]} />
+               <TopSellingProducts data={data?.data?.collections[2]}  />
                <ProductBanner 
-                imageLink={sb1}
+                imageLink={MEDIA_BASE_URL+data?.data?.banners[1]?.image}
                 alttext=""
                />
-               <DailyDiscover/>
+               <DailyDiscover data={data?.data?.collections[0]} />
                <ProductBanner 
-                imageLink={sb2}
+                imageLink={MEDIA_BASE_URL+data?.data?.banners[2]?.image}
                 alttext=""
                />
         </div>

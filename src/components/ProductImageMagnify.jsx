@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import { MEDIA_BASE_URL } from '../constants/URL';
 
-const ProductDetail = () => {
+const ProductDetail = ({data}) => {
   const [zoomStyle, setZoomStyle] = useState({
     backgroundPosition: '0% 0%',
     backgroundSize: 'initial',
@@ -53,11 +54,11 @@ const ProductDetail = () => {
                 <img
                   draggable="false"
                   className="responsive-image preview-box"
-                  src="https://www.picnpick.com/uploads/product-1728131264-8.jpg"
-                  data-zoom="https://www.picnpick.com/uploads/product-1728131264-8.jpg"
+                  src={MEDIA_BASE_URL+data[0]?.image}
+                  // data-zoom="https://www.picnpick.com/uploads/product-1728131264-8.jpg"
                   alt="Super soft Leather shoes for Men's -PMS 105"
                   style={{
-                    backgroundImage: `url("https://www.picnpick.com/uploads/product-1728131264-8.jpg")`,
+                    backgroundImage: `url("${MEDIA_BASE_URL+data[0]?.image}")`,
                     backgroundPosition: zoomStyle.backgroundPosition,
                     backgroundSize: zoomStyle.backgroundSize,
                   }}
@@ -72,7 +73,7 @@ const ProductDetail = () => {
                       width: '400px',
                       height: '400px',
                       border: '2px solid #000',
-                      backgroundImage: `url("https://www.picnpick.com/uploads/product-1728131264-8.jpg")`,
+                      backgroundImage: `url("${MEDIA_BASE_URL+data[0]?.image}")`,
                       backgroundSize: '400%',
                       backgroundPosition: zoomStyle.backgroundPosition,
                       zIndex: 10,
@@ -89,23 +90,15 @@ const ProductDetail = () => {
                     visibility: 'visible',
                   }}
                 >
-                  <img
-                    src="https://www.picnpick.com/uploads/product-1728131264-8.jpg"
-                    alt="move thumb icon"
-                    className="zoomer-control responsive-image"
-                  />
-                  <img
-                    draggable="false"
-                    src="https://www.picnpick.com/uploads/product-1728131264-8.jpg"
-                    className="responsive-image"
-                    alt="Thumbnail"
-                  />
-                  <img
-                    draggable="false"
-                    src="https://www.picnpick.com/uploads/product-1728131264-8.jpg"
-                    className="responsive-image"
-                    alt="Thumbnail"
-                  />
+                  {
+                    data?.map(itm => (
+                      <img
+                        src={MEDIA_BASE_URL+itm?.image}
+                        alt="move thumb icon"
+                        className="zoomer-control responsive-image"
+                      />
+                    ))
+                  }
                 </div>
                 <div
                   id="zoomer-pane-container"

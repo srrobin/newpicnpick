@@ -7,7 +7,7 @@ import { GrFormNext } from "react-icons/gr";
 import { GrFormPrevious } from "react-icons/gr";
 
 
-const TrendingProducts = () => {
+const TrendingProducts = ({ data }) => {
   var settings = {
     dots: false,
     infinite: false,
@@ -44,28 +44,19 @@ const TrendingProducts = () => {
       }
     ]
   };
-    return (
-        <div className='gap-20 '> 
-          <CardCase cardTitle='Trending products' cardBtntext="Show all" cardBtnLink="/"cardBg="bg__white" cardBorder="border__white">
-              <div className='slider-container'>
-                <Slider {...settings}>
-                    <ProductCard cardBg="cardBlack"/>
-                    <ProductCard cardBg="cardBlack"/>
-                    <ProductCard cardBg="cardBlack"/>
-                    <ProductCard cardBg="cardBlack"/>
-                    <ProductCard cardBg="cardBlack"/>
-                    <ProductCard cardBg="cardBlack"/>
-                    <ProductCard cardBg="cardBlack"/>
-                    <ProductCard cardBg="cardBlack"/>
-                    <ProductCard cardBg="cardBlack"/>
-                    <ProductCard cardBg="cardBlack"/>
-                    <ProductCard cardBg="cardBlack"/>
-                    <ProductCard cardBg="cardBlack"/>
-                </Slider>
-              </div>
-          </CardCase>
+  return (
+    <div className='gap-20 '>
+      <CardCase cardTitle='Trending products' cardBtntext="Show all" cardBtnLink="/" cardBg="bg__white" cardBorder="border__white">
+        <div className='slider-container'>
+          <Slider {...settings}>
+            {
+              data?.product_collections?.map(itm => <ProductCard cardBg="cardBlack" key={itm?.id} data={itm} />)
+            }
+          </Slider>
         </div>
-    );
+      </CardCase>
+    </div>
+  );
 };
 
 
